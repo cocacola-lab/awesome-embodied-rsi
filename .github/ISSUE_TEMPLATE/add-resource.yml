@@ -1,0 +1,33 @@
+name: Suggest an Embodied RSI resource
+description: Propose a paper, system, dataset, benchmark, survey, or official update.
+title: "[Resource]: "
+labels: ["candidate"]
+body:
+  - type: input
+    id: title
+    attributes:
+      label: Title
+    validations:
+      required: true
+  - type: input
+    id: primary_source
+    attributes:
+      label: Primary source URL
+      description: Paper, official project page, official repository, or official announcement.
+    validations:
+      required: true
+  - type: dropdown
+    id: rsi_level
+    attributes:
+      label: Proposed RSI level
+      options: ["E0 — Embodied", "E1 — Adaptive", "E2 — Self-Improving", "E3 — Recursive", "E4 — Open-Ended"]
+    validations:
+      required: true
+  - type: textarea
+    id: persistence
+    attributes:
+      label: What persists or recursively improves?
+      description: Identify the model, policy, memory, skill, harness, embodiment, or improvement process and cite evidence.
+    validations:
+      required: true
+

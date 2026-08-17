@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" role="img" aria-labelledby="title desc">
+  <title id="title">Awesome Embodied RSI</title>
+  <desc id="desc">A visual identity for embodied recursive self-improvement: experience, evaluation, improvement, and redeployment.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#081226"/>
+      <stop offset="0.55" stop-color="#172554"/>
+      <stop offset="1" stop-color="#312e81"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#38bdf8"/>
+      <stop offset="0.52" stop-color="#818cf8"/>
+      <stop offset="1" stop-color="#f472b6"/>
+    </linearGradient>
+    <radialGradient id="glow">
+      <stop offset="0" stop-color="#60a5fa" stop-opacity="0.32"/>
+      <stop offset="1" stop-color="#60a5fa" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="soft"><feGaussianBlur stdDeviation="12"/></filter>
+  </defs>
+
+  <rect width="1200" height="320" rx="24" fill="url(#bg)"/>
+  <circle cx="1020" cy="20" r="250" fill="url(#glow)" filter="url(#soft)"/>
+  <circle cx="70" cy="330" r="210" fill="#ec4899" opacity="0.08" filter="url(#soft)"/>
+  <g opacity="0.14" stroke="#c7d2fe">
+    <path d="M0 64H1200M0 128H1200M0 192H1200M0 256H1200"/>
+    <path d="M80 0V320M160 0V320M240 0V320M320 0V320M400 0V320M480 0V320M560 0V320M640 0V320M720 0V320M800 0V320M880 0V320M960 0V320M1040 0V320M1120 0V320"/>
+  </g>
+
+  <rect x="563" y="72" width="74" height="28" rx="14" fill="#1e3a8a" stroke="#60a5fa"/>
+  <text x="600" y="91" text-anchor="middle" fill="#bfdbfe" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" font-weight="700">E0 → E4</text>
+  <text x="600" y="154" text-anchor="middle" fill="#f8fafc" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="50" font-weight="800" letter-spacing="-1.4">Awesome Embodied RSI</text>
+  <rect x="240" y="174" width="720" height="5" rx="2.5" fill="url(#accent)"/>
+  <text x="600" y="217" text-anchor="middle" fill="#cbd5e1" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="20">Experience-driven agents that learn how to improve again.</text>
+  <text x="600" y="253" text-anchor="middle" fill="#94a3b8" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13">EXPERIENCE  →  EVALUATE  →  IMPROVE  →  RE-DEPLOY  ↺</text>
+</svg>
