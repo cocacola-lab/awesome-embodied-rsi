@@ -20,7 +20,7 @@ body:
     id: rsi_level
     attributes:
       label: Proposed RSI level
-      options: ["E0 — Embodied", "E1 — Adaptive", "E2 — Self-Improving", "E3 — Recursive", "E4 — Open-Ended"]
+      options: ["L0 — Embodied", "L1 — Adaptive", "L2 — Self-Improving", "L3 — Recursive", "L4 — Open-Ended"]
     validations:
       required: true
   - type: textarea

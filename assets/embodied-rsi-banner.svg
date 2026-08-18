@@ -28,7 +28,7 @@
   </g>
 
   <rect x="563" y="72" width="74" height="28" rx="14" fill="#1e3a8a" stroke="#60a5fa"/>
-  <text x="600" y="91" text-anchor="middle" fill="#bfdbfe" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" font-weight="700">E0 → E4</text>
+  <text x="600" y="91" text-anchor="middle" fill="#bfdbfe" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" font-weight="700">L0 → L4</text>
   <text x="600" y="154" text-anchor="middle" fill="#f8fafc" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="50" font-weight="800" letter-spacing="-1.4">Awesome Embodied RSI</text>
   <rect x="240" y="174" width="720" height="5" rx="2.5" fill="url(#accent)"/>
   <text x="600" y="217" text-anchor="middle" fill="#cbd5e1" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="20">Experience-driven agents that learn how to improve again.</text>
