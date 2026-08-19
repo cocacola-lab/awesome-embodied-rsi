@@ -16,6 +16,29 @@ body:
       description: Paper, official project page, official repository, or official announcement.
     validations:
       required: true
+  - type: input
+    id: venue
+    attributes:
+      label: Publication venue
+      description: Conference, journal, or preprint status; use N/A for non-paper resources.
+    validations:
+      required: true
+  - type: dropdown
+    id: source_status
+    attributes:
+      label: Source status
+      description: Open-source requires an explicit open-source license.
+      options: ["Open-source", "Closed-source"]
+    validations:
+      required: true
+  - type: checkboxes
+    id: evaluation_environments
+    attributes:
+      label: Evaluation environments
+      description: Select every environment supported by primary-source evidence.
+      options:
+        - label: Real-machine
+        - label: Simulation
   - type: dropdown
     id: rsi_level
     attributes:
@@ -30,4 +53,3 @@ body:
       description: Identify the model, policy, memory, skill, harness, embodiment, or improvement process and cite evidence.
     validations:
       required: true
-

@@ -12,6 +12,7 @@ Awesome Embodied RSI is curated rather than exhaustive. Core entries should demo
 - Do not infer recursion merely from reflection, replanning, online adaptation, or the word "self-improving".
 - Record code, weights, and data openness separately.
 - Mark code as `open-source` only when the repository has an explicit open-source license.
+- For papers, record the conference, journal, or preprint status and whether evaluation uses a real machine, simulation, or both.
 - Provide factual, one-sentence summaries in English and Chinese.
 
 ## Suggest a resource
@@ -22,6 +23,7 @@ Open a resource suggestion issue or submit a pull request. Include:
 - The proposed section and defensible RSI level.
 - Evidence for what persists or improves across episodes.
 - Separate code, weight, and data availability, including the code license when applicable.
+- The publication venue and evaluation environment (`Real-machine`, `Simulation`, or both).
 - A factual one-sentence summary in English or Chinese.
 
 Maintainers verify each proposal against primary sources before updating the public list. Internal discovery and review tooling is intentionally not included in this repository.
