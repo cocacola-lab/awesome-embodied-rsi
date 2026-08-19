@@ -7,7 +7,7 @@
   <img src="https://img.shields.io/badge/RSI-L0%20%E2%86%92%20L4-f97316?style=flat-square" alt="RSI levels L0 through L4">
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-0ea5e9?style=flat-square" alt="MIT license"></a>
   <br><br>
-  <strong>A curated map of research, systems, benchmarks, and industry progress<br>toward experience-driven embodied agents that improve—and improve how they improve.</strong>
+  <strong>Making "Robot improving Robot" possible.<br>A curated map toward experience-driven embodied agents that improve—and improve how they improve.</strong>
   <br><br>
   <a href="README.zh-CN.md">中文</a> · <a href="docs/TAXONOMY.md">Taxonomy</a> · <a href="CONTRIBUTING.md">Contributing</a>
 </div>
@@ -24,7 +24,7 @@
   </tr>
 </table>
 
-<p align="center"><b>19</b> research works &nbsp;·&nbsp; <b>3</b> industry updates &nbsp;·&nbsp; <b>1</b> benchmark &nbsp;·&nbsp; <b>2</b> surveys</p>
+<p align="center"><b>33</b> research works &nbsp;·&nbsp; <b>2</b> industry updates &nbsp;·&nbsp; <b>1</b> benchmark &nbsp;·&nbsp; <b>2</b> surveys</p>
 
 <a id="overview"></a>
 
@@ -51,19 +51,20 @@ The core collection prioritizes L2–L4. L0–L1 items are included only when th
 ## 🔥 Latest Weekly Highlights
 
 <!-- WEEKLY_HIGHLIGHTS -->
-- **Self-Evolving Embodied Agents via Skill-Harness Evolution** (2026-08-11) `L2 Self-Improving` `paper`. [Paper](https://arxiv.org/abs/2608.11350)<br>
+- **Self-Evolving Embodied Agents via Skill-Harness Evolution** (2026-08-11) · *arXiv preprint* · `L2 Self-Improving` `paper` ![Closed-source](https://img.shields.io/badge/Closed--source-d73a49?style=flat-square) ![Simulation](https://img.shields.io/badge/Simulation-8250df?style=flat-square). [Paper](https://arxiv.org/abs/2608.11350)<br>
   <sub><b>Authors:</b> Peidong Wang, Zhiming Ma, Ying Chang, Xufang Luo, Xiaocui Yang, Shi Feng, Yuqing Yang, Dongsheng Li</sub><br>
-  SHAPER keeps model weights frozen while using target-environment rollouts to evolve reusable skills and the context-code harness that surrounds an embodied agent.
-- **LeRobot v0.6.0: Imagine, Evaluate, Improve** (2026-07-07) `L1 Adaptive` `news`. [Official](https://huggingface.co/blog/lerobot-release-v060)<br>
-  LeRobot v0.6.0 adds world-model policies, a unified reward-model API, simulation benchmarks, rollout tooling, and human-in-the-loop corrections for robot-learning workflows.
-- **Develop Humanoid Robot Policies End-to-End with NVIDIA Isaac GR00T** (2026-07-07) `L1 Adaptive` `news`. [Official](https://developer.nvidia.com/blog/develop-humanoid-robot-policies-end-to-end-with-nvidia-isaac-gr00t/)<br>
+  SHAPER keeps model weights frozen while using target-environment rollouts to evolve reusable skills and the context-code harness that surrounds an embodied agent. Simulation, no real machine.
+- **ETA: A New Agentic Paradigm for Embodied Tasks** (2026-08-04) · *arXiv preprint* · `L2 Self-Improving` `paper` ![Open-source](https://img.shields.io/badge/Open--source-2ea44f?style=flat-square) ![Real-machine](https://img.shields.io/badge/Real--machine-0969da?style=flat-square) ![Simulation](https://img.shields.io/badge/Simulation-8250df?style=flat-square). [Paper](https://arxiv.org/abs/2608.03924) · [Project](https://openmoss.ai/OpenETA/) · [Code](https://github.com/OpenMOSS/OpenETA)<br>
+  <sub><b>Authors:</b> Yitong Chen, Zezheng Huai, Sixian Li, Yubang Wang, Haozhe Zhang, Yifei Zhang, Hechang Chen, Jingjing Gong, Yu-Gang Jiang, Xipeng Qiu</sub><br>
+  ETA organizes embodied tasks around a Planner-Interface-World loop that verifies outcomes and converts interactions into reusable experience; OpenETA implements the paradigm with replaceable planners, tools, skills, memory, and replayable trajectories.
+- **You Don't Need To Stay in The Loop: An Agentic Robotics Loop for Robot-Policy Improvement** (2026-08-02) · *arXiv preprint* · `L3 Recursive` `paper` ![Closed-source](https://img.shields.io/badge/Closed--source-d73a49?style=flat-square) ![Simulation](https://img.shields.io/badge/Simulation-8250df?style=flat-square). [Paper](https://arxiv.org/abs/2608.07555)<br>
+  <sub><b>Authors:</b> Hang Yu</sub><br>
+  AgenticRobotics turns train-evaluate-improve work into durable, evidence-gated transactions with commit-keyed recovery, measured tool quality, and auditable promotion so a robot-policy improvement loop can run without continuous operator attention.
+- **Exploratory, Communicative, and Deployable: Vision-Driven Embodied Agents for Open-World Mobile Manipulation** (2026-07-15) · *ECCV 2026* · `L2 Self-Improving` `paper` ![Open-source](https://img.shields.io/badge/Open--source-2ea44f?style=flat-square) ![Real-machine](https://img.shields.io/badge/Real--machine-0969da?style=flat-square) ![Simulation](https://img.shields.io/badge/Simulation-8250df?style=flat-square). [Paper](https://arxiv.org/abs/2607.13653) · [Project](https://internrobotics.github.io/REAL/) · [Code](https://github.com/InternRobotics/REAL)<br>
+  <sub><b>Authors:</b> Boyu Mi, Mengchen Ma, Yifei Yao, Xing Gao, Junting Chen, Yangzi Li, Zihou Zhu, Guohao Li, Zhenfei Yin, Tai Wang, Yao Mu, Jiangmiao Pang, Hanqing Wang</sub><br>
+  REAL combines active exploration, interactive intent disambiguation, supervised fine-tuning, and online reinforcement learning through simulator-consistent APIs, then transfers the resulting agent to a physical dual-arm mobile robot.
+- **Develop Humanoid Robot Policies End-to-End with NVIDIA Isaac GR00T** (2026-07-07) · `L1 Adaptive` `news`. [Official](https://developer.nvidia.com/blog/develop-humanoid-robot-policies-end-to-end-with-nvidia-isaac-gr00t/)<br>
   NVIDIA's GR00T development platform connects simulation, teleoperation, policy training, evaluation, and deployment in an integrated humanoid-robot workflow, alongside the GR00T 1.7 model release.
-- **Self-Improving Agents in the Era of Experience: A Survey of Self- to Meta-Evolution** (2026-06-25) `L1 Adaptive` `survey`. [Paper](https://openreview.net/pdf?id=IUltZSgLMm) · [Code](https://github.com/FrontisAI/Awesome-Self-Improving-Agents)<br>
-  <sub><b>Authors:</b> Che Jiang, Jincheng Zhong, Yu Fu, Kai Tian, Junlin Yang, Kaikai Zhao, Yuchong Wang, Tianwei Luo, Weizhi Wang, Yuxin Zuo, Guoli Jia, Xingtai Lv, Dianqiao Lei, Sihang Zeng, Yuru Wang, Zhenzhao Yuan, Xinwei Long, Ermo Hua, Can Ren, Xin Jiang, Shulei Xie, Yuanchun Zheng, Youbang Sun, Biqing Qi, Ning Ding, Kaiyan Zhang, Bowen Zhou</sub><br>
-  This survey organizes experience-driven self-improving agents from runtime adaptation of skills, memory, context, tools, and environments through agent reinforcement learning to meta-agents and evolution orchestration.
-- **Harness Engineering for Physical AI: Robot Middleware Is the Harness Layer** (2026-06-08) `L1 Adaptive` `paper`. [Paper](https://arxiv.org/abs/2606.09416) · [PDF](https://arxiv.org/pdf/2606.09416) · [Zhihu Commentary](https://zhuanlan.zhihu.com/p/2049821645158756713)<br>
-  <sub><b>Authors:</b> Sanghoon Lee, Jiyeong Chae, Kyung-Joon Park</sub><br>
-  This position paper argues that robot middleware should become the harness layer for Physical AI, enforcing projection, isolation, and transfer across control, compute, and communication.
 
 <a id="research"></a>
 
@@ -90,10 +91,10 @@ The core collection prioritizes L2–L4. L0–L1 items are included only when th
 
 _Concepts, definitions, boundaries, and theory; classified here when framing Embodied RSI is the work's primary contribution._
 
-- **Intelligent Robot Manipulation Requires Self-Directed Learning** (2026-03-04) `L1 Adaptive` `paper`. [Paper](https://openreview.net/forum?id=5IpSR7v4gj)<br>
+- **Intelligent Robot Manipulation Requires Self-Directed Learning** (2026-03-04) · *OpenReview preprint* · `L1 Adaptive` `paper` ![Closed-source](https://img.shields.io/badge/Closed--source-d73a49?style=flat-square) ![Real-machine](https://img.shields.io/badge/Real--machine-0969da?style=flat-square). [Paper](https://openreview.net/forum?id=5IpSR7v4gj)<br>
   <sub><b>Authors:</b> Li Chen, Chonghao Sima, Kashyap Chitta, Antonio Loquercio, Ping Luo, Yi Ma, Hongyang Li</sub><br>
-  This perspective argues that intelligent manipulation must move beyond imitation toward self-directed goal identification, skill acquisition, and performance evaluation without assuming resets or clean reward signals.
-- **Darwin Gödel Machine: Open-Ended Evolution of Self-Improving Agents** (2025-05-29) `L1 Adaptive` `paper`. [Paper](https://arxiv.org/abs/2505.22954) · [Project](https://sakana.ai/dgm/) · [Code](https://github.com/jennyzzt/dgm)<br>
+  This perspective argues that intelligent manipulation must move beyond imitation toward self-directed learning, in which agents learn from their own experience through real-world interaction. It highlights two challenges that distinguish this setting from conventional reinforcement learning—irreversible environments without resets and noisy, ambiguous feedback without explicit rewards—and identifies self-directed goal selection, skill acquisition, and performance evaluation as key research directions.
+- **Darwin Gödel Machine: Open-Ended Evolution of Self-Improving Agents** (2025-05-29) · *arXiv preprint* · `L1 Adaptive` `paper` ![Closed-source](https://img.shields.io/badge/Closed--source-d73a49?style=flat-square) ![Simulation](https://img.shields.io/badge/Simulation-8250df?style=flat-square). [Paper](https://arxiv.org/abs/2505.22954) · [Project](https://sakana.ai/dgm/) · [Code](https://github.com/jennyzzt/dgm)<br>
   <sub><b>Authors:</b> Jenny Zhang, Shengran Hu, Cong Lu, Robert Lange, Jeff Clune</sub><br>
   The Darwin Gödel Machine iteratively modifies and empirically evaluates its own coding-agent codebase while maintaining an archive of discovered variants for open-ended exploration.
 
@@ -103,7 +104,10 @@ _Concepts, definitions, boundaries, and theory; classified here when framing Emb
 
 _Autonomous generation of goals, tasks, rewards, experiments, or curricula; classified by what drives the agent's next learning objective._
 
-- **OMNI-EPIC: Open-endedness via Models of human Notions of Interestingness with Environments Programmed in Code** (2024-05-24) `L2 Self-Improving` `paper`. [Paper](https://arxiv.org/abs/2405.15568) · [Project](https://omni-epic.vercel.app/)<br>
+- **Playful Agentic Robot Learning** (2026-06-17) · *arXiv preprint* · `L2 Self-Improving` `paper` ![Closed-source](https://img.shields.io/badge/Closed--source-d73a49?style=flat-square) ![Real-machine](https://img.shields.io/badge/Real--machine-0969da?style=flat-square) ![Simulation](https://img.shields.io/badge/Simulation-8250df?style=flat-square). [Paper](https://arxiv.org/abs/2606.19419) · [Project](https://playful-rats.github.io/) · [Code](https://github.com/Playful-RATs/RATs)<br>
+  <sub><b>Authors:</b> Junyi Zhang, Jiaxin Ge, Hanjun Yoo, Letian Fu, Zihan Yang, Yaowei Liu, Raj Saravanan, Shaofeng Yin, Justin Yu, Dantong Niu, Zirui Wang, Roei Herzig, Ken Goldberg, Yutong Bai, David M. Chan, Ion Stoica, Angjoo Kanazawa, Jiahui Lei, Haiwen Feng, Trevor Darrell</sub><br>
+  RATs uses self-directed play to propose learnable manipulation tasks, execute and diagnose code policies, and distill successful attempts into a persistent skill library that transfers to downstream simulated and real-robot tasks.
+- **OMNI-EPIC: Open-endedness via Models of human Notions of Interestingness with Environments Programmed in Code** (2024-05-24) · *NeurIPS 2024* · `L2 Self-Improving` `paper` ![Closed-source](https://img.shields.io/badge/Closed--source-d73a49?style=flat-square) ![Simulation](https://img.shields.io/badge/Simulation-8250df?style=flat-square). [Paper](https://arxiv.org/abs/2405.15568) · [Project](https://omni-epic.vercel.app/)<br>
   <sub><b>Authors:</b> Maxence Faldor, Jenny Zhang, Antoine Cully, Jeff Clune</sub><br>
   OMNI-EPIC uses foundation models to continually generate learnable and interesting simulated tasks, environments, and rewards conditioned on an agent's current learning progress.
 
@@ -113,9 +117,12 @@ _Autonomous generation of goals, tasks, rewards, experiments, or curricula; clas
 
 _Autonomous collection, generation, and selection of interaction experience; classified by how the agent obtains its own improvement data._
 
-- **Autonomous Improvement of Instruction Following Skills via Foundation Models** (2024-07-30) `L2 Self-Improving` `paper`. [Paper](https://arxiv.org/abs/2407.20635)<br>
+- **Exploratory, Communicative, and Deployable: Vision-Driven Embodied Agents for Open-World Mobile Manipulation** (2026-07-15) · *ECCV 2026* · `L2 Self-Improving` `paper` ![Open-source](https://img.shields.io/badge/Open--source-2ea44f?style=flat-square) ![Real-machine](https://img.shields.io/badge/Real--machine-0969da?style=flat-square) ![Simulation](https://img.shields.io/badge/Simulation-8250df?style=flat-square). [Paper](https://arxiv.org/abs/2607.13653) · [Project](https://internrobotics.github.io/REAL/) · [Code](https://github.com/InternRobotics/REAL)<br>
+  <sub><b>Authors:</b> Boyu Mi, Mengchen Ma, Yifei Yao, Xing Gao, Junting Chen, Yangzi Li, Zihou Zhu, Guohao Li, Zhenfei Yin, Tai Wang, Yao Mu, Jiangmiao Pang, Hanqing Wang</sub><br>
+  REAL combines active exploration, interactive intent disambiguation, supervised fine-tuning, and online reinforcement learning through simulator-consistent APIs, then transfers the resulting agent to a physical dual-arm mobile robot.
+- **Autonomous Improvement of Instruction Following Skills via Foundation Models** (2024-07-30) · *arXiv preprint* · `L2 Self-Improving` `paper` ![Closed-source](https://img.shields.io/badge/Closed--source-d73a49?style=flat-square) ![Real-machine](https://img.shields.io/badge/Real--machine-0969da?style=flat-square). [Paper](https://arxiv.org/abs/2407.20635)<br>
   <sub><b>Authors:</b> Zhiyuan Zhou, Pranav Atreya, Abraham Lee, Homer Walke, Oier Mees, Sergey Levine</sub><br>
-  The method uses vision-language models to autonomously collect and evaluate meaningful real-robot experience, then improves instruction-following policies without human annotations.
+  The method uses vision-language models to autonomously collect and evaluate meaningful real-robot experience, then improves instruction-following policies without human annotations. The entire system proposes an end-to-end self-improvement loop: the VLM observes the current environment to propose tasks, followed by robot execution, success detection, hindsight relabeling, and learning; hindsight relabeling also allows failed data to be reused.
 
 <a id="self-evaluation-feedback"></a>
 
@@ -123,7 +130,16 @@ _Autonomous collection, generation, and selection of interaction experience; cla
 
 _Critics, rewards, verifiers, reflection, and outcome diagnosis; classified by how the system measures performance and produces feedback._
 
-- **RFTF: Reinforcement Fine-tuning for Vision-language-action Models with Temporal Feedback** (2025-09-19) `L1 Adaptive` `paper`. [Paper](https://openreview.net/forum?id=v8fZ1PbV4D)<br>
+- **A Closed-Loop Multi-Agent Framework for Robust Multi-Robot Manipulation** (2026-07-08) · *RSS 2026* · `L1 Adaptive` `paper` ![Closed-source](https://img.shields.io/badge/Closed--source-d73a49?style=flat-square) ![Real-machine](https://img.shields.io/badge/Real--machine-0969da?style=flat-square). [Paper](https://arxiv.org/abs/2607.06990)<br>
+  <sub><b>Authors:</b> Yi-Xiang He, Lan Wei, Haoming Cen, Jian-Jian Jiang, Zhuohao Li, Guanxing Lu, Yihan Yang, Dandan Zhang, Wei-Shi Zheng</sub><br>
+  A planning agent allocates subtasks, per-robot manipulation agents execute adaptive tools, and a verification agent monitors physical outcomes and returns semantic corrections to close the loop in multi-robot manipulation.
+- **From Reaction to Anticipation: Proactive Failure Recovery through Agentic Task Graph for Robotic Manipulation** (2026-05-12) · *RSS 2026* · `L1 Adaptive` `paper` ![Open-source](https://img.shields.io/badge/Open--source-2ea44f?style=flat-square) ![Real-machine](https://img.shields.io/badge/Real--machine-0969da?style=flat-square) ![Simulation](https://img.shields.io/badge/Simulation-8250df?style=flat-square). [Paper](https://arxiv.org/abs/2605.11951) · [Project](https://shengxu.net/AgentChord/) · [Code](https://github.com/EDEM-AI/AgentChord)<br>
+  <sub><b>Authors:</b> Sheng Xu, Ruixing Jin, Huayi Zhou, Bo Yue, Guanren Qiao, Yunxin Tai, Yueci Deng, Kui Jia, Guiliang Liu</sub><br>
+  AgentChord builds a task graph before execution and enriches it with anticipated, context-aware recovery branches so low-latency monitors can trigger corrective behaviors without waiting for full replanning.
+- **MindPower: Enabling Theory-of-Mind Reasoning in VLM-based Embodied Agents** (2025-11-28) · *CVPR 2026* · `L1 Adaptive` `paper` ![Closed-source](https://img.shields.io/badge/Closed--source-d73a49?style=flat-square) ![Simulation](https://img.shields.io/badge/Simulation-8250df?style=flat-square). [Paper](https://arxiv.org/abs/2511.23055)<br>
+  <sub><b>Authors:</b> Ruoxuan Zhang, Qiyun Zheng, Zhiyu Zhou, Ziqi Liao, Siyu Wu, Jian-Yu Jiang-Lin, Bin Wen, Hongxia Xie, Jianlong Fu, Wen-Huang Cheng</sub><br>
+  MindPower adds robot-centric theory-of-mind reasoning over the agent's and humans' beliefs, desires, and intentions, and uses Mind-Reward to optimize consistency between the reasoning chain and generated actions.
+- **RFTF: Reinforcement Fine-tuning for Vision-language-action Models with Temporal Feedback** (2025-09-19) · *OpenReview preprint* · `L1 Adaptive` `paper` ![Closed-source](https://img.shields.io/badge/Closed--source-d73a49?style=flat-square) ![Simulation](https://img.shields.io/badge/Simulation-8250df?style=flat-square). [Paper](https://openreview.net/forum?id=v8fZ1PbV4D)<br>
   <sub><b>Authors:</b> Junyang Shu, Zhiwei Lin, Yongtao Wang</sub><br>
   RFTF trains a value model from temporal information to provide dense feedback for reinforcement fine-tuning of VLA policies and reports rapid task adaptation on CALVIN.
 
@@ -139,25 +155,25 @@ _Persistent self-improvement is organized by the system component that changes a
 
 _Persistent updates to models, policies, or world models; classified here when learned parameters or decision rules are the main improvement target._
 
-- **Self-Improving Loops for Visual Robotic Planning** (2026-05-27) `L2 Self-Improving` `paper`. [Paper](https://openreview.net/forum?id=HK9OWSMgoq)<br>
+- **Self-Improving Loops for Visual Robotic Planning** (2026-05-27) · *OpenReview preprint* · `L2 Self-Improving` `paper` ![Closed-source](https://img.shields.io/badge/Closed--source-d73a49?style=flat-square) ![Real-machine](https://img.shields.io/badge/Real--machine-0969da?style=flat-square) ![Simulation](https://img.shields.io/badge/Simulation-8250df?style=flat-square). [Paper](https://openreview.net/forum?id=HK9OWSMgoq)<br>
   <sub><b>Authors:</b> Calvin Luo, Zilai Zeng, Mingxi Jia, Yilun Du, Chen Sun</sub><br>
-  SILVR repeatedly updates a visual planning model on self-produced trajectories and reports continuing gains on unseen simulated tasks and real-arm manipulation.
-- **VLAW: Iterative Co-Improvement of Vision-Language-Action Policy and World Model** (2026-02-12) `L2 Self-Improving` `paper`. [Paper](https://arxiv.org/abs/2602.12063) · [Project](https://sites.google.com/view/vla-w)<br>
+  SILVR repeatedly updates a visual planning model (namely, a video generation model) on self-produced trajectories and reports continuing gains on unseen simulated tasks and real-arm manipulation.
+- **RoboClaw: An Agentic Framework for Scalable Long-Horizon Robotic Tasks** (2026-03-12) · *arXiv preprint* · `L2 Self-Improving` `paper` ![Closed-source](https://img.shields.io/badge/Closed--source-d73a49?style=flat-square) ![Real-machine](https://img.shields.io/badge/Real--machine-0969da?style=flat-square). [Paper](https://arxiv.org/abs/2603.11558) · [Project](https://roboclaw-agibot.github.io/) · [Code](https://github.com/RoboClaw-Robotics/RoboClaw)<br>
+  <sub><b>Authors:</b> Ruiying Li, Yunlang Zhou, YuYao Zhu, Kylin Chen, Jingyuan Wang, Sukai Wang, Kongtao Hu, Minhui Yu, Bowen Jiang, Zhan Su, Jiayao Ma, Xin He, Yongjian Shen, Yang Yang, Guanghui Ren, Maoqing Yao, Wenhao Wang, Yao Mu</sub><br>
+  RoboClaw unifies data collection, policy learning, and deployment under one VLM controller, using paired forward and inverse behaviors for self-resetting on-policy collection and iterative policy refinement on real robots.
+- **VLAW: Iterative Co-Improvement of Vision-Language-Action Policy and World Model** (2026-02-12) · *arXiv preprint* · `L2 Self-Improving` `paper` ![Closed-source](https://img.shields.io/badge/Closed--source-d73a49?style=flat-square) ![Real-machine](https://img.shields.io/badge/Real--machine-0969da?style=flat-square) ![Simulation](https://img.shields.io/badge/Simulation-8250df?style=flat-square). [Paper](https://arxiv.org/abs/2602.12063) · [Project](https://sites.google.com/view/vla-w)<br>
   <sub><b>Authors:</b> Yanjiang Guo, Tony Lee, Lucy Xiaoyang Shi, Jianyu Chen, Percy Liang, Chelsea Finn</sub><br>
   VLAW alternates between improving an action-conditioned video world model with real robot rollouts and improving a VLA policy with synthetic rollouts generated by that world model.
-- **π*0.6: a VLA That Learns From Experience** (2025-11-18) `L2 Self-Improving` `paper`. [Paper](https://arxiv.org/abs/2511.14759) · [Official](https://www.pi.website/blog/pistar06)<br>
+- **π*0.6: a VLA That Learns From Experience** (2025-11-18) · *arXiv preprint* · `L2 Self-Improving` `paper` ![Closed-source](https://img.shields.io/badge/Closed--source-d73a49?style=flat-square) ![Real-machine](https://img.shields.io/badge/Real--machine-0969da?style=flat-square). [Paper](https://arxiv.org/abs/2511.14759) · [Official](https://www.pi.website/blog/pistar06)<br>
   <sub><b>Authors:</b> Physical Intelligence, Ali Amin, Raichelle Aniceto, Ashwin Balakrishna, Kevin Black, Ken Conley, Grace Connors, James Darpinian, Karan Dhabalia, Jared DiCarlo, Danny Driess, Michael Equi, Adnan Esmail, Yunhao Fang, Chelsea Finn, Catherine Glossop, Thomas Godden, Ivan Goryachev, Lachy Groom, Hunter Hancock, Karol Hausman, Gashon Hussein, Brian Ichter, Szymon Jakubczak, Rowan Jen, Tim Jones, Ben Katz, Liyiming Ke, Chandra Kuchi, Marinda Lamb, Devin LeBlanc, Sergey Levine, Adrian Li-Bell, Yao Lu, Vishnu Mano, Mohith Mothukuri, Suraj Nair, Karl Pertsch, Allen Z. Ren, Charvi Sharma, Lucy Xiaoyang Shi, Laura Smith, Jost Tobias Springenberg, Kyle Stachowicz, Will Stoeckle, Alex Swerdlow, James Tanner, Marcel Torne, Quan Vuong, Anna Walling, Haohuan Wang, Blake Williams, Sukwon Yoo, Lili Yu, Ury Zhilinsky, Zhiyuan Zhou</sub><br>
-  RECAP improves the π*0.6 vision-language-action model through iterative real-robot rollouts, reward feedback, and corrective interventions on long-horizon manipulation tasks.
-- **Self-Improving Embodied Foundation Models** (2025-09-18) `L2 Self-Improving` `paper`. [Paper](https://arxiv.org/abs/2509.15155) · [Project](https://self-improving-efms.github.io/)<br>
+  RECAP improves the π*0.6 vision-language-action model through iterative real-robot rollouts, reward feedback, and corrective interventions on long-horizon manipulation tasks. It engineers a three-stage demonstration-to-correction-to-practice process through offline RL pretraining and online RL fine-tuning, sparse rewards and remote human correction, and learning from unsuccessful data.
+- **Self-Improving Embodied Foundation Models** (2025-09-18) · *arXiv preprint* · `L2 Self-Improving` `paper` ![Closed-source](https://img.shields.io/badge/Closed--source-d73a49?style=flat-square) ![Real-machine](https://img.shields.io/badge/Real--machine-0969da?style=flat-square). [Paper](https://arxiv.org/abs/2509.15155) · [Project](https://self-improving-efms.github.io/)<br>
   <sub><b>Authors:</b> Seyed Kamyar Seyed Ghasemipour, Ayzaan Wahid, Jonathan Tompson, Pannag Sanketi, Igor Mordatch</sub><br>
-  A two-stage post-training recipe derives rewards and success detection from a pretrained embodied foundation model, enabling robot fleets to practice autonomously and acquire new skills.
-- **SELFI: Autonomous Self-Improvement with RL for Vision-Based Navigation around People** (2024-09-05) `L2 Self-Improving` `paper`. [Paper](https://openreview.net/forum?id=rRpmVq6yHv) · [Project](https://sites.google.com/view/selfi-rl/)<br>
-  <sub><b>Authors:</b> Noriaki Hirose, Dhruv Shah, Kyle Stachowicz, Ajay Sridhar, Sergey Levine</sub><br>
-  SELFI fine-tunes pretrained visual navigation policies from online real-robot experience, improving collision avoidance and socially compliant behavior with limited intervention.
-- **RoboCat: A Self-Improving Generalist Agent for Robotic Manipulation** (2023-06-20) `L2 Self-Improving` `paper`. [Paper](https://arxiv.org/abs/2306.11706) · [Official](https://deepmind.google/blog/robocat-a-self-improving-robotic-agent)<br>
+  A two-stage post-training recipe derives rewards (Steps-to-Go Head as reward) and success detection from a pretrained embodied foundation model, enabling robot fleets to practice autonomously and acquire new skills. The model itself generate reward without manually-designed reward engineering.
+- **RoboCat: A Self-Improving Generalist Agent for Robotic Manipulation** (2023-06-20) · *arXiv preprint* · `L2 Self-Improving` `paper` ![Closed-source](https://img.shields.io/badge/Closed--source-d73a49?style=flat-square) ![Real-machine](https://img.shields.io/badge/Real--machine-0969da?style=flat-square). [Paper](https://arxiv.org/abs/2306.11706) · [Official](https://deepmind.google/blog/robocat-a-self-improving-robotic-agent)<br>
   <sub><b>Authors:</b> Konstantinos Bousmalis, Giulia Vezzani, Dushyant Rao, Coline Devin, Alex X. Lee, Maria Bauza, Todor Davchev, Yuxiang Zhou, Agrim Gupta, Akhil Raju, Antoine Laurens, Claudio Fantacci, Valentin Dalibard, Martina Zambelli, Murilo Martins, Rugile Pevceviciute, Michiel Blokzijl, Misha Denil, Nathan Batchelor, Thomas Lampe, Emilio Parisotto, Konrad Żołna, Scott Reed, Sergio Gómez Colmenarejo, Jon Scholz, Abbas Abdolmaleki, Oliver Groth, Jean-Baptiste Regli, Oleg Sushkov, Tom Rothörl, José Enrique Chen, Yusuf Aytar, Dave Barker, Joy Ortiz, Martin Riedmiller, Jost Tobias Springenberg, Raia Hadsell, Francesco Nori, Nicolas Heess</sub><br>
   RoboCat adapts to new robot arms and tasks, generates additional practice trajectories, and incorporates them into later generalist training rounds.
-- **Self-Improving Robots: End-to-End Autonomous Visuomotor Reinforcement Learning** (2023-03-02) `L2 Self-Improving` `paper`. [Paper](https://arxiv.org/abs/2303.01488) · [Project](https://architsharma97.github.io/self-improving-robots/)<br>
+- **Self-Improving Robots: End-to-End Autonomous Visuomotor Reinforcement Learning** (2023-03-02) · *CoRL 2023* · `L2 Self-Improving` `paper` ![Closed-source](https://img.shields.io/badge/Closed--source-d73a49?style=flat-square) ![Real-machine](https://img.shields.io/badge/Real--machine-0969da?style=flat-square) ![Simulation](https://img.shields.io/badge/Simulation-8250df?style=flat-square). [Paper](https://arxiv.org/abs/2303.01488) · [Project](https://architsharma97.github.io/self-improving-robots/)<br>
   <sub><b>Authors:</b> Archit Sharma, Ahmed M. Ahmed, Rehaan Ahmad, Chelsea Finn</sub><br>
   MEDAL++ lets real robots autonomously practice manipulation by learning both task completion and reset behaviors, improving success over behavior cloning with minimal ongoing supervision.
 
@@ -167,7 +183,12 @@ _Persistent updates to models, policies, or world models; classified here when l
 
 _Persistent storage, revision, consolidation, and retrieval of learned knowledge; classified by changes to what the agent remembers and reuses._
 
-_No entries yet._
+- **When Robots Do the Chores: A Benchmark and Agent for Long-Horizon Household Task Execution** (2026-05-14) · *arXiv preprint* · `L1 Adaptive` `paper` ![Closed-source](https://img.shields.io/badge/Closed--source-d73a49?style=flat-square) ![Simulation](https://img.shields.io/badge/Simulation-8250df?style=flat-square). [Paper](https://arxiv.org/abs/2605.14504)<br>
+  <sub><b>Authors:</b> Zilin Zhu, Longteng Guo, Yanghong Mei, Bowen Pang, Zongxun Zhang, Xingjian He, Ruyi Ji, Jing Liu</sub><br>
+  LongAct isolates planning-level autonomy in free-form household chores, while HoloMind combines a DAG planner, multimodal spatial memory, episodic experience reuse, and a global critic for reflective supervision.
+- **ABot-Claw: A Foundation for Persistent, Cooperative, and Self-Evolving Robotic Agents** (2026-04-11) · *arXiv preprint* · `L2 Self-Improving` `paper` ![Closed-source](https://img.shields.io/badge/Closed--source-d73a49?style=flat-square) ![Real-machine](https://img.shields.io/badge/Real--machine-0969da?style=flat-square). [Paper](https://arxiv.org/abs/2604.10096) · [Code](https://github.com/amap-cvlab/ABot-Claw)<br>
+  <sub><b>Authors:</b> Dongjie Huo, Haoyun Liu, Guoqing Liu, Dekang Qi, Zhiming Sun, Maoguo Gao, Jianxin He, Yandan Yang, Xinyuan Chang, Feng Xiong, Xing Wei, Zhiheng Ma, Mu Xu</sub><br>
+  ABot-Claw extends an agent runtime with capability-driven multi-robot scheduling, cross-embodiment multimodal memory, and critic-based feedback for online progress evaluation, correction, and replanning in real environments.
 
 <a id="skills-behaviors"></a>
 
@@ -175,13 +196,13 @@ _No entries yet._
 
 _Acquisition, refinement, composition, and reuse of skills or behaviors; classified by changes to the agent's executable capability repertoire._
 
-- **EmbodiSkill: Skill-Aware Reflection for Self-Evolving Embodied Agents** (2026-05-11) `L2 Self-Improving` `paper`. [Paper](https://arxiv.org/abs/2605.10332)<br>
+- **EmbodiSkill: Skill-Aware Reflection for Self-Evolving Embodied Agents** (2026-05-11) · *arXiv preprint* · `L2 Self-Improving` `paper` ![Closed-source](https://img.shields.io/badge/Closed--source-d73a49?style=flat-square) ![Simulation](https://img.shields.io/badge/Simulation-8250df?style=flat-square). [Paper](https://arxiv.org/abs/2605.10332)<br>
   <sub><b>Authors:</b> Ruofei Ju, Xinrui Wang, Xin Ding, Yifan Yang, Hao Wu, Shiqi Jiang, Qianxi Zhang, Hao Wen, Xiangyu Li, Weijun Wang, Kun Li, Yunxin Liu, Haipeng Dai, Wei Wang, Ting Cao</sub><br>
-  EmbodiSkill reflects on trajectories to distinguish flawed skill guidance from execution lapses and persistently revises reusable procedural skills around a frozen model.
-- **Lifelong Robot Library Learning: Bootstrapping Composable and Generalizable Skills for Embodied Control with Language Models** (2024-06-26) `L2 Self-Improving` `paper`. [Paper](https://arxiv.org/abs/2406.18746) · [Project](https://gtziafas.github.io/LRLL_project)<br>
+  EmbodiSkill reflects on trajectories to distinguish flawed skill guidance from execution lapses and persistently revises reusable procedural skills around a frozen model. Simulation, no real machine.
+- **Lifelong Robot Library Learning: Bootstrapping Composable and Generalizable Skills for Embodied Control with Language Models** (2024-06-26) · *ICRA 2024* · `L2 Self-Improving` `paper` ![Closed-source](https://img.shields.io/badge/Closed--source-d73a49?style=flat-square) ![Real-machine](https://img.shields.io/badge/Real--machine-0969da?style=flat-square) ![Simulation](https://img.shields.io/badge/Simulation-8250df?style=flat-square). [Paper](https://arxiv.org/abs/2406.18746) · [Project](https://gtziafas.github.io/LRLL_project)<br>
   <sub><b>Authors:</b> Georgios Tziafas, Hamidreza Kasaei</sub><br>
-  LRLL grows a composable robot skill library by proposing tasks, storing experience in memory, and distilling successful experience into reusable policies.
-- **Voyager: An Open-Ended Embodied Agent with Large Language Models** (2023-05-25) `L2 Self-Improving` `paper`. [Paper](https://arxiv.org/abs/2305.16291) · [Project](https://voyager.minedojo.org/)<br>
+  LRLL grows a composable robot skill library by proposing tasks, storing experience in memory, and distilling successful experience into reusable policies. LRLL does not perform gradient updates, its goal is to upgrade the paradigm of 'fixed skill library+manual prompts' to a lifelong learning cycle that will grow and summarize skills on its own. The entire learning process is completed through LLM coding, memory retrieval, and experience distillation.
+- **Voyager: An Open-Ended Embodied Agent with Large Language Models** (2023-05-25) · *TMLR 2024* · `L2 Self-Improving` `paper` ![Closed-source](https://img.shields.io/badge/Closed--source-d73a49?style=flat-square) ![Simulation](https://img.shields.io/badge/Simulation-8250df?style=flat-square). [Paper](https://arxiv.org/abs/2305.16291) · [Project](https://voyager.minedojo.org/)<br>
   <sub><b>Authors:</b> Guanzhi Wang, Yuqi Xie, Yunfan Jiang, Ajay Mandlekar, Chaowei Xiao, Yuke Zhu, Linxi Fan, Anima Anandkumar</sub><br>
   Voyager autonomously proposes tasks, refines executable skills from environment feedback, and accumulates a reusable code library during continual exploration in Minecraft.
 
@@ -191,13 +212,31 @@ _Acquisition, refinement, composition, and reuse of skills or behaviors; classif
 
 _Mutable middleware, tools, context, orchestration, and runtime infrastructure; classified here when the external system around the agent is improved._
 
-- **Self-Evolving Embodied Agents via Skill-Harness Evolution** (2026-08-11) `L2 Self-Improving` `paper`. [Paper](https://arxiv.org/abs/2608.11350)<br>
+- **Self-Evolving Embodied Agents via Skill-Harness Evolution** (2026-08-11) · *arXiv preprint* · `L2 Self-Improving` `paper` ![Closed-source](https://img.shields.io/badge/Closed--source-d73a49?style=flat-square) ![Simulation](https://img.shields.io/badge/Simulation-8250df?style=flat-square). [Paper](https://arxiv.org/abs/2608.11350)<br>
   <sub><b>Authors:</b> Peidong Wang, Zhiming Ma, Ying Chang, Xufang Luo, Xiaocui Yang, Shi Feng, Yuqing Yang, Dongsheng Li</sub><br>
-  SHAPER keeps model weights frozen while using target-environment rollouts to evolve reusable skills and the context-code harness that surrounds an embodied agent.
-- **Harness Engineering for Physical AI: Robot Middleware Is the Harness Layer** (2026-06-08) `L1 Adaptive` `paper`. [Paper](https://arxiv.org/abs/2606.09416) · [PDF](https://arxiv.org/pdf/2606.09416) · [Zhihu Commentary](https://zhuanlan.zhihu.com/p/2049821645158756713)<br>
+  SHAPER keeps model weights frozen while using target-environment rollouts to evolve reusable skills and the context-code harness that surrounds an embodied agent. Simulation, no real machine.
+- **ETA: A New Agentic Paradigm for Embodied Tasks** (2026-08-04) · *arXiv preprint* · `L2 Self-Improving` `paper` ![Open-source](https://img.shields.io/badge/Open--source-2ea44f?style=flat-square) ![Real-machine](https://img.shields.io/badge/Real--machine-0969da?style=flat-square) ![Simulation](https://img.shields.io/badge/Simulation-8250df?style=flat-square). [Paper](https://arxiv.org/abs/2608.03924) · [Project](https://openmoss.ai/OpenETA/) · [Code](https://github.com/OpenMOSS/OpenETA)<br>
+  <sub><b>Authors:</b> Yitong Chen, Zezheng Huai, Sixian Li, Yubang Wang, Haozhe Zhang, Yifei Zhang, Hechang Chen, Jingjing Gong, Yu-Gang Jiang, Xipeng Qiu</sub><br>
+  ETA organizes embodied tasks around a Planner-Interface-World loop that verifies outcomes and converts interactions into reusable experience; OpenETA implements the paradigm with replaceable planners, tools, skills, memory, and replayable trajectories.
+- **You Don't Need To Stay in The Loop: An Agentic Robotics Loop for Robot-Policy Improvement** (2026-08-02) · *arXiv preprint* · `L3 Recursive` `paper` ![Closed-source](https://img.shields.io/badge/Closed--source-d73a49?style=flat-square) ![Simulation](https://img.shields.io/badge/Simulation-8250df?style=flat-square). [Paper](https://arxiv.org/abs/2608.07555)<br>
+  <sub><b>Authors:</b> Hang Yu</sub><br>
+  AgenticRobotics turns train-evaluate-improve work into durable, evidence-gated transactions with commit-keyed recovery, measured tool quality, and auditable promotion so a robot-policy improvement loop can run without continuous operator attention.
+- **Cortex: A Bidirectionally Aligned Embodied Agent Framework for Long-horizon Manipulation** (2026-07-06) · *arXiv preprint* · `L1 Adaptive` `paper` ![Closed-source](https://img.shields.io/badge/Closed--source-d73a49?style=flat-square) ![Real-machine](https://img.shields.io/badge/Real--machine-0969da?style=flat-square) ![Simulation](https://img.shields.io/badge/Simulation-8250df?style=flat-square). [Paper](https://arxiv.org/abs/2607.05377) · [Project](https://steinate.github.io/Cortex/) · [Code](https://github.com/InternRobotics/Cortex)<br>
+  <sub><b>Authors:</b> Jiaqi Peng, Xiqian Yu, Delin Feng, Yuqiang Yang, Wenzhe Cai, Jing Xiong, Ganlin Yang, Jinliang Zheng, Jiafei Cao, Xueyuan Wei, Jiangmiao Pang, Yuan Shen, Tai Wang</sub><br>
+  Cortex aligns a high-level VLM planner and a low-level VLA through 32 canonical skill primitives, event-balanced training data, semantic memory, and closed-loop verification for long-horizon manipulation.
+- **ENPIRE: Agentic Robot Policy Self-Improvement in the Real World** (2026-06-18) · *arXiv preprint* · `L3 Recursive` `paper` ![Closed-source](https://img.shields.io/badge/Closed--source-d73a49?style=flat-square) ![Real-machine](https://img.shields.io/badge/Real--machine-0969da?style=flat-square) ![Simulation](https://img.shields.io/badge/Simulation-8250df?style=flat-square). [Paper](https://arxiv.org/abs/2606.19980) · [Project](https://research.nvidia.com/labs/gear/enpire/)<br>
+  <sub><b>Authors:</b> Wenli Xiao, Jia Xie, Tonghe Zhang, Haotian Lin, Letian "Max" Fu, Haoru Xue, Jalen Lu, Yi Yang, Cunxi Dai, Zi Wang, Jimmy Wu, Guanzhi Wang, S. Shankar Sastry, Ken Goldberg, Linxi "Jim" Fan, Yuke Zhu, Guanya Shi</sub><br>
+  ENPIRE gives coding agents a repeatable physical feedback loop for automatic reset, verification, rollout, policy refinement, and evolution of training infrastructure and algorithm code across individual robots and fleets.
+- **Harness Engineering for Physical AI: Robot Middleware Is the Harness Layer** (2026-06-08) · *arXiv preprint* · `L1 Adaptive` `paper` ![Closed-source](https://img.shields.io/badge/Closed--source-d73a49?style=flat-square) ![Real-machine](https://img.shields.io/badge/Real--machine-0969da?style=flat-square) ![Simulation](https://img.shields.io/badge/Simulation-8250df?style=flat-square). [Paper](https://arxiv.org/abs/2606.09416) · [PDF](https://arxiv.org/pdf/2606.09416) · [Zhihu Commentary](https://zhuanlan.zhihu.com/p/2049821645158756713)<br>
   <sub><b>Authors:</b> Sanghoon Lee, Jiyeong Chae, Kyung-Joon Park</sub><br>
-  This position paper argues that robot middleware should become the harness layer for Physical AI, enforcing projection, isolation, and transfer across control, compute, and communication.
-- **PhyAgentOS: A Session-Centered Runtime for Embodied Intelligence** (2026-03-12) `L1 Adaptive` `system` `open source`. [Code](https://github.com/PhyAgentOS-dev/PhyAgentOS) · [Project](https://phy-agent-os.net/)<br>
+  This position paper argues that robot middleware should become the harness layer for Physical AI, enforcing projection, isolation, and transfer across control, compute, and communication. (position paper)
+- **ROSClaw: An OpenClaw ROS 2 Framework for Agentic Robot Control and Interaction** (2026-03-27) · *arXiv preprint* · `L1 Adaptive` `paper` ![Open-source](https://img.shields.io/badge/Open--source-2ea44f?style=flat-square) ![Real-machine](https://img.shields.io/badge/Real--machine-0969da?style=flat-square). [Paper](https://arxiv.org/abs/2603.26997) · [Code](https://github.com/ros-claw/rosclaw)<br>
+  <sub><b>Authors:</b> Irvin Steve Cardenas, Marcus Anthony Arnett, Natalie Catherine Yeo, Lucky Sah, Jong-Hoon Kim</sub><br>
+  ROSClaw connects model-agnostic agent runtimes to ROS 2 through dynamic capability discovery, normalized observations, pre-execution safety validation, and audit logging, and evaluates the executive layer on three physical robot platforms.
+- **CaP-X: A Framework for Benchmarking and Improving Coding Agents for Robot Manipulation** (2026-03-23) · *ICML 2026* · `L2 Self-Improving` `paper` ![Open-source](https://img.shields.io/badge/Open--source-2ea44f?style=flat-square) ![Real-machine](https://img.shields.io/badge/Real--machine-0969da?style=flat-square) ![Simulation](https://img.shields.io/badge/Simulation-8250df?style=flat-square). [Paper](https://arxiv.org/abs/2603.22435) · [Project](https://capgym.github.io/) · [Code](https://github.com/capgym/cap-x)<br>
+  <sub><b>Authors:</b> Letian Fu, Justin Yu, Karim El-Refai, Ethan Kou, Haoru Xue, Huang Huang, Wenli Xiao, Guanzhi Wang, Dantong Niu, Fei-Fei Li, Guanya Shi, Jiajun Wu, Shankar Sastry, Yuke Zhu, Ken Goldberg, Linxi "Jim" Fan</sub><br>
+  CaP-X combines CaP-Gym and CaP-Bench for controlled evaluation of Code-as-Policy agents, CaP-Agent0 for training-free improvement through execution feedback and synthesized skills, and CaP-RL for persistent reinforcement-learning updates that transfer from simulation to real robots.
+- **PhyAgentOS: A Session-Centered Runtime for Embodied Intelligence** (2026-03-12) · *Open-source project* · `L1 Adaptive` `system` ![Open-source](https://img.shields.io/badge/Open--source-2ea44f?style=flat-square) ![Real-machine](https://img.shields.io/badge/Real--machine-0969da?style=flat-square) ![Simulation](https://img.shields.io/badge/Simulation-8250df?style=flat-square). [Code](https://github.com/PhyAgentOS-dev/PhyAgentOS) · [Project](https://phy-agent-os.net/)<br>
   <sub><b>Authors:</b> Sun Yat-sen University HCP Lab, Peng Cheng Laboratory, X-Era Lab</sub><br>
   PhyAgentOS is an open-source embodied-agent harness built around cognitive-physical decoupling and a session-centered runtime, with target and policy adapters, verification and recovery, auditable workspace protocols, safety checks, and simulation-to-real deployment.
 
@@ -215,7 +254,7 @@ _No entries yet._
 
 _Accumulation across time, tasks, robots, or agents; classified by long-horizon retention, transfer, fleet learning, or collective evolution._
 
-- **Lifelong Autonomous Improvement of Navigation Foundation Models in the Wild** (2024-09-05) `L2 Self-Improving` `paper`. [Paper](https://openreview.net/forum?id=vBj5oC60Lk) · [Project](https://kylestach.github.io/lifelong-nav-rl/) · [Code](https://github.com/kylestach/lifelong-nav-rl)<br>
+- **Lifelong Autonomous Improvement of Navigation Foundation Models in the Wild** (2024-09-05) · *OpenReview preprint* · `L2 Self-Improving` `paper` ![Closed-source](https://img.shields.io/badge/Closed--source-d73a49?style=flat-square) ![Real-machine](https://img.shields.io/badge/Real--machine-0969da?style=flat-square). [Paper](https://openreview.net/forum?id=vBj5oC60Lk) · [Project](https://kylestach.github.io/lifelong-nav-rl/) · [Code](https://github.com/kylestach/lifelong-nav-rl)<br>
   <sub><b>Authors:</b> Kyle Stachowicz, Lydia Ignatova, Sergey Levine</sub><br>
   LiReN combines offline reinforcement-learning pretraining with continual autonomous operation so a navigation foundation model can fine-tune from online experience in new deployment environments.
 
@@ -225,31 +264,31 @@ _Accumulation across time, tasks, robots, or agents; classified by long-horizon 
 
 _Constraints, oversight, auditing, rollback, and recovery for changing embodied systems; classified by how self-improvement remains controlled and aligned._
 
-_No entries yet._
+- **AGENTSAFE: Benchmarking the Safety of Embodied Agents on Hazardous Instructions** (2025-06-17) · *CVPR 2026* · `L0 Embodied` `paper` ![Closed-source](https://img.shields.io/badge/Closed--source-d73a49?style=flat-square) ![Simulation](https://img.shields.io/badge/Simulation-8250df?style=flat-square). [Paper](https://arxiv.org/abs/2506.14697)<br>
+  <sub><b>Authors:</b> Zonghao Ying, Le Wang, Yisong Xiao, Jiakai Wang, Yuqing Ma, Jinyang Guo, Zhenfei Yin, Mingchuan Zhang, Aishan Liu, Xianglong Liu</sub><br>
+  AGENTSAFE introduces SAFE-THOR, SAFE-VERSE, and SAFE-DIAGNOSE to evaluate how embodied VLM agents perceive, plan, and execute hazardous instructions across 1,350 adversarial simulated tasks.
 
 <a id="resources"></a>
 
 ## 🧪 Benchmarks & Datasets
 
-- **EmbodiedGovBench: A Benchmark for Governance, Recovery, and Upgrade Safety in Embodied Agent Systems** (2026-04-13) `L1 Adaptive` `benchmark`. [Paper](https://arxiv.org/abs/2604.11174)<br>
+- **EmbodiedGovBench: A Benchmark for Governance, Recovery, and Upgrade Safety in Embodied Agent Systems** (2026-04-13) · `L1 Adaptive` `benchmark`. [Paper](https://arxiv.org/abs/2604.11174)<br>
   <sub><b>Authors:</b> Xue Qin, Simin Luan, John See, Cong Yang, Zhijun Li</sub><br>
   EmbodiedGovBench proposes governance-oriented evaluation of capability boundaries, runtime drift, recovery, policy portability, upgrade safety, human override, and audit completeness.
 
 ## 🏭 Industry & Lab Updates
 
-- **LeRobot v0.6.0: Imagine, Evaluate, Improve** (2026-07-07) `L1 Adaptive` `news`. [Official](https://huggingface.co/blog/lerobot-release-v060)<br>
-  LeRobot v0.6.0 adds world-model policies, a unified reward-model API, simulation benchmarks, rollout tooling, and human-in-the-loop corrections for robot-learning workflows.
-- **Develop Humanoid Robot Policies End-to-End with NVIDIA Isaac GR00T** (2026-07-07) `L1 Adaptive` `news`. [Official](https://developer.nvidia.com/blog/develop-humanoid-robot-policies-end-to-end-with-nvidia-isaac-gr00t/)<br>
+- **Develop Humanoid Robot Policies End-to-End with NVIDIA Isaac GR00T** (2026-07-07) · `L1 Adaptive` `news`. [Official](https://developer.nvidia.com/blog/develop-humanoid-robot-policies-end-to-end-with-nvidia-isaac-gr00t/)<br>
   NVIDIA's GR00T development platform connects simulation, teleoperation, policy training, evaluation, and deployment in an integrated humanoid-robot workflow, alongside the GR00T 1.7 model release.
-- **SIMA 2: A Gemini-Powered AI Agent for 3D Virtual Worlds** (2025-12-05) `L2 Self-Improving` `news`. [Official](https://deepmind.google/blog/sima-2-an-agent-that-plays-reasons-and-learns-with-you-in-virtual-3d-worlds/) · [Report](https://storage.googleapis.com/deepmind-media/DeepMind.com/Blog/sima-2-an-agent-that-plays-reasons-and-learns-with-you-in-virtual-3d-worlds/SIMA_Tech_Report_2025.pdf)<br>
+- **SIMA 2: A Gemini-Powered AI Agent for 3D Virtual Worlds** (2025-12-05) · `L2 Self-Improving` `news`. [Official](https://deepmind.google/blog/sima-2-an-agent-that-plays-reasons-and-learns-with-you-in-virtual-3d-worlds/) · [Report](https://storage.googleapis.com/deepmind-media/DeepMind.com/Blog/sima-2-an-agent-that-plays-reasons-and-learns-with-you-in-virtual-3d-worlds/SIMA_Tech_Report_2025.pdf)<br>
   Google DeepMind reports that SIMA 2 can use Gemini-generated tasks and feedback to train successive agents from self-generated experience in previously unseen 3D worlds.
 
 ## 📚 Surveys
 
-- **Self-Improving Agents in the Era of Experience: A Survey of Self- to Meta-Evolution** (2026-06-25) `L1 Adaptive` `survey`. [Paper](https://openreview.net/pdf?id=IUltZSgLMm) · [Code](https://github.com/FrontisAI/Awesome-Self-Improving-Agents)<br>
+- **Self-Improving Agents in the Era of Experience: A Survey of Self- to Meta-Evolution** (2026-06-25) · `L0 Embodied` `survey`. [Paper](https://openreview.net/pdf?id=IUltZSgLMm) · [Code](https://github.com/FrontisAI/Awesome-Self-Improving-Agents)<br>
   <sub><b>Authors:</b> Che Jiang, Jincheng Zhong, Yu Fu, Kai Tian, Junlin Yang, Kaikai Zhao, Yuchong Wang, Tianwei Luo, Weizhi Wang, Yuxin Zuo, Guoli Jia, Xingtai Lv, Dianqiao Lei, Sihang Zeng, Yuru Wang, Zhenzhao Yuan, Xinwei Long, Ermo Hua, Can Ren, Xin Jiang, Shulei Xie, Yuanchun Zheng, Youbang Sun, Biqing Qi, Ning Ding, Kaiyan Zhang, Bowen Zhou</sub><br>
-  This survey organizes experience-driven self-improving agents from runtime adaptation of skills, memory, context, tools, and environments through agent reinforcement learning to meta-agents and evolution orchestration.
-- **Self-evolving Embodied AI** (2026-02-04) `L1 Adaptive` `survey`. [Paper](https://arxiv.org/abs/2602.04411)<br>
+  This survey organizes experience-driven self-improving agents from runtime adaptation of skills, memory, context, tools, and environments through agent reinforcement learning to meta-agents and evolution orchestration.(No Embodiment)
+- **Self-evolving Embodied AI** (2026-02-04) · `L2 Self-Improving` `survey`. [Paper](https://arxiv.org/abs/2602.04411)<br>
   <sub><b>Authors:</b> Tongtong Feng, Xin Wang, Wenwu Zhu</sub><br>
   This survey frames self-evolving embodied AI around memory updating, task switching, environment prediction, embodiment adaptation, and model evolution.
 
