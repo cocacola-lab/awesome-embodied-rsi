@@ -24,7 +24,7 @@
   </tr>
 </table>
 
-<p align="center"><b>39</b> 项研究 &nbsp;·&nbsp; <b>2</b> 条产业动态 &nbsp;·&nbsp; <b>1</b> 个基准 &nbsp;·&nbsp; <b>2</b> 篇综述</p>
+<p align="center"><b>43</b> 项研究 &nbsp;·&nbsp; <b>3</b> 条产业动态 &nbsp;·&nbsp; <b>2</b> 个基准 &nbsp;·&nbsp; <b>5</b> 篇综述</p>
 
 <a id="overview"></a>
 
@@ -51,21 +51,21 @@
 ## 🔥 每周精选
 
 <!-- WEEKLY_HIGHLIGHTS -->
-- **Physical Agentic AI: An Architecture for Orchestrating a Robot Crew with LLMs** (2026-08-23) · *arXiv preprint* · `L1 Adaptive` `paper` ![Closed-source](https://img.shields.io/badge/Closed--source-d73a49?style=flat-square) ![Real-machine](https://img.shields.io/badge/Real--machine-0969da?style=flat-square) ![Simulation](https://img.shields.io/badge/Simulation-8250df?style=flat-square). [Paper](https://arxiv.org/abs/2608.22657)<br>
-  <sub><b>作者:</b> Xinyuan Liu, Eren Sadikoglu, Riana Chatterjee, Ransalu Senanayake</sub><br>
-  Physical Agentic AI 将不直接驱动执行器的基础模型任务规划器，与确定性的机器人编排器分离；后者在执行前逐项检查类型化机器人技能是否满足能力、状态和工作流约束。Gazebo 无人机—地面车任务及 Unitree G1/Go2 试验表明，逐次调度验证可在故障引发机器人运动前将其阻断。
-- **Don't Drop the BATON: Long-Horizon Robot Manipulation via Agentic Subtask Exploration and Transition-aware Memory** (2026-08-17) · *arXiv preprint* · `L2 Self-Improving` `paper` ![Closed-source](https://img.shields.io/badge/Closed--source-d73a49?style=flat-square) ![Simulation](https://img.shields.io/badge/Simulation-8250df?style=flat-square). [Paper](https://arxiv.org/abs/2608.16889)<br>
-  <sub><b>作者:</b> Bingxin Xu, Yuzhang Shang, Emilio Ferrara</sub><br>
-  BATON 冻结 VLA 参数，通过智能体式测试时探索获得可复用的子任务方案，并写入具备转移感知能力的语言记忆。调用验证、交接状态恢复和前瞻式策略选择，使其无需更新参数即可在 RoboMemArena 上更可靠地组合长时程任务。
-- **Neurosymbolic Embodied Agents** (2026-08-17) · *arXiv preprint* · `L1 Adaptive` `paper` ![Closed-source](https://img.shields.io/badge/Closed--source-d73a49?style=flat-square) ![Simulation](https://img.shields.io/badge/Simulation-8250df?style=flat-square). [Paper](https://arxiv.org/abs/2608.16794)<br>
-  <sub><b>作者:</b> Mohammad Albinhassan, Yuming Feng, Alessandra Russo, Pranava Madhyastha</sub><br>
-  该神经符号智能体先借助 VLM 与探索 Harness 获取目标相关谓词和对象绑定，再结合 PDDL 约束解码与蒙特卡洛树搜索生成可执行的长时程计划；无需专项训练，开放的 4B–27B 模型在 VirtualHome 和 ALFWorld 中均达到超过 90% 的成功率。
-- **Self-Evolving Embodied Agents via Skill-Harness Evolution** (2026-08-11) · *arXiv preprint* · `L2 Self-Improving` `paper` ![Closed-source](https://img.shields.io/badge/Closed--source-d73a49?style=flat-square) ![Simulation](https://img.shields.io/badge/Simulation-8250df?style=flat-square). [Paper](https://arxiv.org/abs/2608.11350)<br>
-  <sub><b>作者:</b> Peidong Wang, Zhiming Ma, Ying Chang, Xufang Luo, Xiaocui Yang, Shi Feng, Yuqing Yang, Dongsheng Li</sub><br>
-  SHAPER 保持模型参数冻结，利用目标环境中的执行轨迹进化可复用技能以及具身智能体外围的上下文代码 Harness。Simulation, no real machine.
-- **ETA: A New Agentic Paradigm for Embodied Tasks** (2026-08-04) · *arXiv preprint* · `L2 Self-Improving` `paper` ![Open-source](https://img.shields.io/badge/Open--source-2ea44f?style=flat-square) ![Real-machine](https://img.shields.io/badge/Real--machine-0969da?style=flat-square) ![Simulation](https://img.shields.io/badge/Simulation-8250df?style=flat-square). [Paper](https://arxiv.org/abs/2608.03924) · [Project](https://openmoss.ai/OpenETA/) · [Code](https://github.com/OpenMOSS/OpenETA)<br>
-  <sub><b>作者:</b> Yitong Chen, Zezheng Huai, Sixian Li, Yubang Wang, Haozhe Zhang, Yifei Zhang, Hechang Chen, Jingjing Gong, Yu-Gang Jiang, Xipeng Qiu</sub><br>
-  ETA 以 Planner—Interface—World 循环组织具身任务，验证执行结果并将交互转化为可复用经验；OpenETA 以可替换规划器、工具、技能、记忆和可回放轨迹实现该范式。
+- **Intrinsic Robot Rewarding: Reusing VLA Representations for Autonomous Evaluation and Policy Improvement** (2026-09-15) · *arXiv preprint* · `L1 Adaptive` `paper` ![Closed-source](https://img.shields.io/badge/Closed--source-d73a49?style=flat-square) ![Real-machine](https://img.shields.io/badge/Real--machine-0969da?style=flat-square). [Paper](https://arxiv.org/abs/2609.17115)<br>
+  <sub><b>作者:</b> Tobias Schaffer, Mohab Elkhayat, Daniela Nicklas, Mustafa Almohamad, Elham Al-Fuqara</sub><br>
+  Intrinsic Robot Rewarding 复用冻结 VLA 的视觉编码器，并以成功示范的终点构建参考库，对新的机器人结果进行评分，旨在减少重复的人工结果标注并连接内部评估与策略改进。工作报告了 TRL 4 的 COMAU Racer 3 演示系统，但将物理策略改进明确定位为下一步。
+- **World Models for Embodied Intelligence: From Plausible to Controllable to Actionable** (2026-09-15) · `L0 Embodied` `survey`. [Paper](https://arxiv.org/abs/2609.16697) · [Project](https://3dagentworld.github.io/)<br>
+  <sub><b>作者:</b> Nanjie Yao, Hao Wang, Chong Cheng, Zhikang Chen, Wenzhe Li, Jiafei Lyu, Li Shen, Peilin Zhao, Zongqing Lu, Gao Huang, Steven Hoi, Dacheng Tao, Deheng Ye</sub><br>
+  该综述按世界模型是否具备 Plausible、Controllable 和 Actionable 能力进行分层，并将几何、物理与动作落地维度和数据、奖励、策略、模型改进闭环交叉组织；它将评估重点从视觉逼真度转向可测量的闭环行为增益。
+- **Embodied-BenchForge: A Closed-Loop Agentic Workflow for Embodied Benchmark Construction** (2026-09-11) · `L1 Adaptive` `benchmark`. [Paper](https://arxiv.org/abs/2609.13082)<br>
+  <sub><b>作者:</b> Baoyang Jiang, Fengchun Zhang, Leyuan Wang, Haotian Li, Yida Wang, Zhe Ji, Jinshan Lai, Xi Ren, Danyang Li, Zheng Yang, Jianwei Hu, Qiang Ma</sub><br>
+  Embodied-BenchForge 通过前向合成、反向验证、依赖追踪以及局部修复或回滚，将评测意图转化为具身基准测试产物；它构建离线和交互式赛道，并研究验证与技能复用如何提升基准质量。
+- **The Last AI Built by Humans: Toward Genuine Recursive Self-Improvement** (2026-09-10) · `L0 Embodied` `survey`. [Paper](https://arxiv.org/abs/2609.11873)<br>
+  <sub><b>作者:</b> Yi Duan, Ying Liu, Zirui Tang, Haodong Chen, Jun Zhou, Yumou Liu, Bangrui Xu, Yukai Wu, Sidi Chen, Yuhan Zhou, Haoyu Wang, Xiaoyou Yu, Shaokun Han, Xuzhou Zhu, Le Zhou, Bolin Lu, Wei Zhou, Jiachen Liu, Nuozhou Fang, Jiaxin Tian, Ruoyu Chen, Yuxuan Li, Kai Zuo, Kaiyan Zhang, Qianyu Yang, Zijie Wang, Jiantao Qiu, Conghui He, Guoliang Li, Bowen Zhou, Zhiyuan Liu, Zhoufutu Wen, Jihua Kang, Xuanhe Zhou, Fan Wu</sub><br>
+  该综述与立场论文提出从改进执行自主、改进策略自主、经验获取自主和环境适应自主走向递归元改进的路线图；它比较科学发现、具身智能和软件工程中的 RSI 要求，并强调评估与人类控制。
+- **Safe Task Planning with Long-Term Graph Memory for Embodied Agents** (2026-09-08) · *CoRL 2026* · `L2 Self-Improving` `paper` ![Closed-source](https://img.shields.io/badge/Closed--source-d73a49?style=flat-square) ![Real-machine](https://img.shields.io/badge/Real--machine-0969da?style=flat-square) ![Simulation](https://img.shields.io/badge/Simulation-8250df?style=flat-square). [Paper](https://arxiv.org/abs/2609.08444) · [Project](https://sites.google.com/view/safemem)<br>
+  <sub><b>作者:</b> Siyuan Li, Taiyan Lang, Aoqi Yan, Jia Yu, Feifan Liu, Yihan Du, Yu Zheng, Xun Wang, Peng Liu</sub><br>
+  SafeMem 持续构建动态环境的长期语义图记忆，并以 LLM 风险预测器评估候选动作，在发现危险时触发保守式重规划并给出解释。论文在 IS-Bench 和真实机器人平台上报告了更安全的任务规划结果。
 
 <a id="research"></a>
 
@@ -131,6 +131,9 @@ _收录交互经验的自主采集、生成与筛选；依据智能体如何获�
 
 _收录评价器、奖励、验证器、反思与结果诊断；依据系统如何衡量表现并产生反馈进行分类。_
 
+- **Intrinsic Robot Rewarding: Reusing VLA Representations for Autonomous Evaluation and Policy Improvement** (2026-09-15) · *arXiv preprint* · `L1 Adaptive` `paper` ![Closed-source](https://img.shields.io/badge/Closed--source-d73a49?style=flat-square) ![Real-machine](https://img.shields.io/badge/Real--machine-0969da?style=flat-square). [Paper](https://arxiv.org/abs/2609.17115)<br>
+  <sub><b>作者:</b> Tobias Schaffer, Mohab Elkhayat, Daniela Nicklas, Mustafa Almohamad, Elham Al-Fuqara</sub><br>
+  Intrinsic Robot Rewarding 复用冻结 VLA 的视觉编码器，并以成功示范的终点构建参考库，对新的机器人结果进行评分，旨在减少重复的人工结果标注并连接内部评估与策略改进。工作报告了 TRL 4 的 COMAU Racer 3 演示系统，但将物理策略改进明确定位为下一步。
 - **A Closed-Loop Multi-Agent Framework for Robust Multi-Robot Manipulation** (2026-07-08) · *RSS 2026* · `L1 Adaptive` `paper` ![Closed-source](https://img.shields.io/badge/Closed--source-d73a49?style=flat-square) ![Real-machine](https://img.shields.io/badge/Real--machine-0969da?style=flat-square). [Paper](https://arxiv.org/abs/2607.06990)<br>
   <sub><b>作者:</b> Yi-Xiang He, Lan Wei, Haoming Cen, Jian-Jian Jiang, Zhuohao Li, Guanxing Lu, Yihan Yang, Dandan Zhang, Wei-Shi Zheng</sub><br>
   该框架由规划智能体分配子任务、各机器人操作智能体调用自适应工具，并由验证智能体监控物理结果、返回语义纠正，从而闭合多机器人操作循环。
@@ -159,6 +162,9 @@ _本组按照发生持久变化、并能在后续任务中继续使用的系统�
 
 _收录模型、策略或世界模型的持久更新；当主要改进对象是学习参数或决策规则时归入此类。_
 
+- **Robot Self-Improvement via Human-Video Dynamics Models** (2026-06-19) · *arXiv preprint* · `L2 Self-Improving` `paper` ![Closed-source](https://img.shields.io/badge/Closed--source-d73a49?style=flat-square) ![Real-machine](https://img.shields.io/badge/Real--machine-0969da?style=flat-square). [Paper](https://arxiv.org/abs/2606.21406) · [Project](https://ethz-mrl.github.io/)<br>
+  <sub><b>作者:</b> Hanzhi Chen, Anran Zhang, Simon Schaefer, Kejia Chen, Shi Chen, Daniel Cremers, Oier Mees, Stefan Leutenegger</sub><br>
+  该工作从人类视频中学习与具身无关的动作、动力学和价值表示，并提出 Dynamics-Guided Action Correction，为机器人失败状态生成并排序纠正动作。在移动操作平台和固定机械臂的七项真实操作任务上，该方法将多个策略骨干的成功率从 40% 提升到 81%。
 - **Self-Improving Loops for Visual Robotic Planning** (2026-05-27) · *OpenReview preprint* · `L2 Self-Improving` `paper` ![Closed-source](https://img.shields.io/badge/Closed--source-d73a49?style=flat-square) ![Real-machine](https://img.shields.io/badge/Real--machine-0969da?style=flat-square) ![Simulation](https://img.shields.io/badge/Simulation-8250df?style=flat-square). [Paper](https://openreview.net/forum?id=HK9OWSMgoq)<br>
   <sub><b>作者:</b> Calvin Luo, Zilai Zeng, Mingxi Jia, Yilun Du, Chen Sun</sub><br>
   SILVR 使用自主产生的轨迹反复更新视觉规划模型(即视频生成模型)，并在未见过的模拟任务和真实机械臂操作上持续提升。
@@ -187,6 +193,9 @@ _收录模型、策略或世界模型的持久更新；当主要改进对象是�
 
 _收录所学知识的持久存储、修订、巩固与检索；依据智能体记住并复用的内容如何变化进行分类。_
 
+- **Safe Task Planning with Long-Term Graph Memory for Embodied Agents** (2026-09-08) · *CoRL 2026* · `L2 Self-Improving` `paper` ![Closed-source](https://img.shields.io/badge/Closed--source-d73a49?style=flat-square) ![Real-machine](https://img.shields.io/badge/Real--machine-0969da?style=flat-square) ![Simulation](https://img.shields.io/badge/Simulation-8250df?style=flat-square). [Paper](https://arxiv.org/abs/2609.08444) · [Project](https://sites.google.com/view/safemem)<br>
+  <sub><b>作者:</b> Siyuan Li, Taiyan Lang, Aoqi Yan, Jia Yu, Feifan Liu, Yihan Du, Yu Zheng, Xun Wang, Peng Liu</sub><br>
+  SafeMem 持续构建动态环境的长期语义图记忆，并以 LLM 风险预测器评估候选动作，在发现危险时触发保守式重规划并给出解释。论文在 IS-Bench 和真实机器人平台上报告了更安全的任务规划结果。
 - **Don't Drop the BATON: Long-Horizon Robot Manipulation via Agentic Subtask Exploration and Transition-aware Memory** (2026-08-17) · *arXiv preprint* · `L2 Self-Improving` `paper` ![Closed-source](https://img.shields.io/badge/Closed--source-d73a49?style=flat-square) ![Simulation](https://img.shields.io/badge/Simulation-8250df?style=flat-square). [Paper](https://arxiv.org/abs/2608.16889)<br>
   <sub><b>作者:</b> Bingxin Xu, Yuzhang Shang, Emilio Ferrara</sub><br>
   BATON 冻结 VLA 参数，通过智能体式测试时探索获得可复用的子任务方案，并写入具备转移感知能力的语言记忆。调用验证、交接状态恢复和前瞻式策略选择，使其无需更新参数即可在 RoboMemArena 上更可靠地组合长时程任务。
@@ -222,6 +231,9 @@ _收录技能或行为的获取、精炼、组合与复用；依据智能体可�
 
 _收录可变的中间件、工具、上下文、编排与运行时基础设施；当改进对象是智能体外部系统时归入此类。_
 
+- **EmbodiedSkills: A Unified Framework for Orchestrating, Training, and Deploying VLA Agents** (2026-09-01) · *arXiv preprint* · `L1 Adaptive` `paper` ![Closed-source](https://img.shields.io/badge/Closed--source-d73a49?style=flat-square) ![Simulation](https://img.shields.io/badge/Simulation-8250df?style=flat-square). [Paper](https://arxiv.org/abs/2609.01281)<br>
+  <sub><b>作者:</b> Wei Wang, Wenqiao Zhang, Yutong Lin, Yuqian Yuan, Tianwei Lin, Jinhao Mao, Zhenxuan Fan, Mingjian Gao, Yang Dai, Wentong Li, Zheqi Lv, Zheng Dong, Yingjie Niu, Jiaqi Zhu, Jun Xiao, Chao Li, Yueting Zhuang</sub><br>
+  EmbodiedSkills 将每次技能决策视为执行提案：固定的可执行技能接口检查前置条件、约束低层 VLA 执行、验证结果，并记录支持在线适应的结构化轨迹。论文在 RoboTwin 2.0 和 LIBERO 上评测了 Qwen3-VL 与 OpenPI/pi0.5。
 - **Physical Agentic AI: An Architecture for Orchestrating a Robot Crew with LLMs** (2026-08-23) · *arXiv preprint* · `L1 Adaptive` `paper` ![Closed-source](https://img.shields.io/badge/Closed--source-d73a49?style=flat-square) ![Real-machine](https://img.shields.io/badge/Real--machine-0969da?style=flat-square) ![Simulation](https://img.shields.io/badge/Simulation-8250df?style=flat-square). [Paper](https://arxiv.org/abs/2608.22657)<br>
   <sub><b>作者:</b> Xinyuan Liu, Eren Sadikoglu, Riana Chatterjee, Ransalu Senanayake</sub><br>
   Physical Agentic AI 将不直接驱动执行器的基础模型任务规划器，与确定性的机器人编排器分离；后者在执行前逐项检查类型化机器人技能是否满足能力、状态和工作流约束。Gazebo 无人机—地面车任务及 Unitree G1/Go2 试验表明，逐次调度验证可在故障引发机器人运动前将其阻断。
@@ -291,19 +303,33 @@ _收录面向可变具身系统的约束、监督、审计、回滚与恢复；�
 
 ## 🧪 基准与数据集
 
+- **Embodied-BenchForge: A Closed-Loop Agentic Workflow for Embodied Benchmark Construction** (2026-09-11) · `L1 Adaptive` `benchmark`. [Paper](https://arxiv.org/abs/2609.13082)<br>
+  <sub><b>作者:</b> Baoyang Jiang, Fengchun Zhang, Leyuan Wang, Haotian Li, Yida Wang, Zhe Ji, Jinshan Lai, Xi Ren, Danyang Li, Zheng Yang, Jianwei Hu, Qiang Ma</sub><br>
+  Embodied-BenchForge 通过前向合成、反向验证、依赖追踪以及局部修复或回滚，将评测意图转化为具身基准测试产物；它构建离线和交互式赛道，并研究验证与技能复用如何提升基准质量。
 - **EmbodiedGovBench: A Benchmark for Governance, Recovery, and Upgrade Safety in Embodied Agent Systems** (2026-04-13) · `L1 Adaptive` `benchmark`. [Paper](https://arxiv.org/abs/2604.11174)<br>
   <sub><b>作者:</b> Xue Qin, Simin Luan, John See, Cong Yang, Zhijun Li</sub><br>
   EmbodiedGovBench 面向能力边界、运行漂移、恢复、策略可移植性、升级安全、人工接管和审计完整性提出具身治理评测。
 
 ## 🏭 产业与实验室动态
 
-- **Develop Humanoid Robot Policies End-to-End with NVIDIA Isaac GR00T** (2026-07-07) · `L1 Adaptive` `news`. [Official](https://developer.nvidia.com/blog/develop-humanoid-robot-policies-end-to-end-with-nvidia-isaac-gr00t/)<br>
-  NVIDIA 的 GR00T 开发平台将模拟、遥操作、策略训练、评估和部署连接为完整的人形机器人工作流，并同步发布 GR00T 1.7 模型。
+- **OpenAI reports reaching its automated research intern milestone** (2026-09-06) · `L3 Recursive` `news`. [Official](https://openai.com/index/research-acceleration-view-inside-openai/)<br>
+  OpenAI 表示，根据其内部测量，已达到此前宣布的“自动化研究实习生”目标：系统可在人类指导下完成定义明确的研究任务，包括需要熟练研究员数天完成的工作。这是产业界报道的 bounded RSI 信号，并不等同于已实现完全自主的递归自我改进；OpenAI 仍强调由人类设定研究优先级并判断结果。
+- **Unitree describes a self-evolving Physical AI development loop** (2026-08-20) · `L3 Recursive` `news`. [Report](https://finance.sina.com.cn/stock/wbstock/2026-08-20/doc-ininxvfu2065291.shtml)<br>
+  宇树上市后参加世界机器人大会时，据报道创始人王兴兴介绍了一个 Physical AI 闭环：由顶级大模型生成机器人控制代码，在仿真环境测试，并部署到实体机器人，同时由团队参与。这条记录标注为产业方向信号，而非已验证的生产级 RSI 系统。
 - **SIMA 2: A Gemini-Powered AI Agent for 3D Virtual Worlds** (2025-12-05) · `L2 Self-Improving` `news`. [Official](https://deepmind.google/blog/sima-2-an-agent-that-plays-reasons-and-learns-with-you-in-virtual-3d-worlds/) · [Report](https://storage.googleapis.com/deepmind-media/DeepMind.com/Blog/sima-2-an-agent-that-plays-reasons-and-learns-with-you-in-virtual-3d-worlds/SIMA_Tech_Report_2025.pdf)<br>
   Google DeepMind 报告称，SIMA 2 能利用 Gemini 生成的任务与反馈，在未见过的 3D 世界中使用自主经验训练后续代智能体。
 
 ## 📚 综述
 
+- **World Models for Embodied Intelligence: From Plausible to Controllable to Actionable** (2026-09-15) · `L0 Embodied` `survey`. [Paper](https://arxiv.org/abs/2609.16697) · [Project](https://3dagentworld.github.io/)<br>
+  <sub><b>作者:</b> Nanjie Yao, Hao Wang, Chong Cheng, Zhikang Chen, Wenzhe Li, Jiafei Lyu, Li Shen, Peilin Zhao, Zongqing Lu, Gao Huang, Steven Hoi, Dacheng Tao, Deheng Ye</sub><br>
+  该综述按世界模型是否具备 Plausible、Controllable 和 Actionable 能力进行分层，并将几何、物理与动作落地维度和数据、奖励、策略、模型改进闭环交叉组织；它将评估重点从视觉逼真度转向可测量的闭环行为增益。
+- **The Last AI Built by Humans: Toward Genuine Recursive Self-Improvement** (2026-09-10) · `L0 Embodied` `survey`. [Paper](https://arxiv.org/abs/2609.11873)<br>
+  <sub><b>作者:</b> Yi Duan, Ying Liu, Zirui Tang, Haodong Chen, Jun Zhou, Yumou Liu, Bangrui Xu, Yukai Wu, Sidi Chen, Yuhan Zhou, Haoyu Wang, Xiaoyou Yu, Shaokun Han, Xuzhou Zhu, Le Zhou, Bolin Lu, Wei Zhou, Jiachen Liu, Nuozhou Fang, Jiaxin Tian, Ruoyu Chen, Yuxuan Li, Kai Zuo, Kaiyan Zhang, Qianyu Yang, Zijie Wang, Jiantao Qiu, Conghui He, Guoliang Li, Bowen Zhou, Zhiyuan Liu, Zhoufutu Wen, Jihua Kang, Xuanhe Zhou, Fan Wu</sub><br>
+  该综述与立场论文提出从改进执行自主、改进策略自主、经验获取自主和环境适应自主走向递归元改进的路线图；它比较科学发现、具身智能和软件工程中的 RSI 要求，并强调评估与人类控制。
+- **Self-Evolving AI for Humanoids: Mechanisms, Safety, and Evaluation of Post-Deployment Self-Improvement** (2026-09-02) · `L0 Embodied` `survey`. [Paper](https://arxiv.org/abs/2609.13236)<br>
+  <sub><b>作者:</b> Loc X. Nguyen, Avi Deb Raha, Huy Q. Le, Eui-Nam Huh, Dusit Niyato, Choong Seon Hong</sub><br>
+  该综述将人形机器人部署后的自进化定义为对策略、感知、记忆、工作流和身体状态的更新，并按自学习、自适应、自优化和自生成组织机制；它将安全、不确定性、世界模型验证和人类监督作为可接受进化的约束。
 - **Self-Improving Agents in the Era of Experience: A Survey of Self- to Meta-Evolution** (2026-06-25) · `L0 Embodied` `survey`. [Paper](https://openreview.net/pdf?id=IUltZSgLMm) · [Code](https://github.com/FrontisAI/Awesome-Self-Improving-Agents)<br>
   <sub><b>作者:</b> Che Jiang, Jincheng Zhong, Yu Fu, Kai Tian, Junlin Yang, Kaikai Zhao, Yuchong Wang, Tianwei Luo, Weizhi Wang, Yuxin Zuo, Guoli Jia, Xingtai Lv, Dianqiao Lei, Sihang Zeng, Yuru Wang, Zhenzhao Yuan, Xinwei Long, Ermo Hua, Can Ren, Xin Jiang, Shulei Xie, Yuanchun Zheng, Youbang Sun, Biqing Qi, Ning Ding, Kaiyan Zhang, Bowen Zhou</sub><br>
   该综述梳理经验驱动的自改进智能体，从技能、记忆、上下文、工具和环境的运行时适应，延伸到智能体强化学习、元智能体与进化编排。(无具身)
