@@ -24,7 +24,7 @@
   </tr>
 </table>
 
-<p align="center"><b>53</b> 项研究 &nbsp;·&nbsp; <b>4</b> 条产业动态 &nbsp;·&nbsp; <b>2</b> 个基准 &nbsp;·&nbsp; <b>5</b> 篇综述</p>
+<p align="center"><b>53</b> 项研究 &nbsp;·&nbsp; <b>4</b> 条产业动态 &nbsp;·&nbsp; <b>3</b> 个基准 &nbsp;·&nbsp; <b>5</b> 篇综述</p>
 
 <a id="overview"></a>
 
@@ -335,6 +335,9 @@ _收录面向可变具身系统的约束、监督、审计、回滚与恢复；�
 
 ## 🧪 基准与数据集
 
+- **EmbodiedMemory-Bench: Benchmarking Embodied Memory for Long-Horizon Embodied Tasks** (2026-09-23) · *arXiv preprint* · `L0 Embodied` `benchmark` ![Open-source](https://img.shields.io/badge/Open--source-2ea44f?style=flat-square) ![Simulation](https://img.shields.io/badge/Simulation-8250df?style=flat-square). [Paper](https://arxiv.org/abs/2609.28236) · [Project](https://zju-omniai.github.io/EmbodiedMemoryBench/) · [Code](https://github.com/ZJU-OmniAI/Embodied-Omni/tree/main/embodied_memory) · [Data](https://huggingface.co/datasets/lzLiang/EmbodiedMemoryBench)<br>
+  <sub><b>作者:</b> Lizhou Liang, Xinyu Zhong, Miao Pan, Xiaohe Zhou, Xuanyu Liu, Qinfeng Li, Peng Li, Jintao Chen, Xuhong Zhang, Wenqi Zhang</sub><br>
+  EmbodiedMemory-Bench 在 2,554 个仿真回合中评测早期观测与交互形成的记忆能否支持后续具身行动，覆盖视觉细节记忆、动态状态追踪、交互结果记忆与经验泛化。它是基础评测资源，并不证明递归式自我改进。基准子目录代码采用 Apache-2.0 许可证；公开数据采用 CC BY-NC 4.0，策略权重是否发布尚未核实。
 - **Embodied-BenchForge: A Closed-Loop Agentic Workflow for Embodied Benchmark Construction** (2026-09-11) · `L1 Adaptive` `benchmark`. [Paper](https://arxiv.org/abs/2609.13082)<br>
   <sub><b>作者:</b> Baoyang Jiang, Fengchun Zhang, Leyuan Wang, Haotian Li, Yida Wang, Zhe Ji, Jinshan Lai, Xi Ren, Danyang Li, Zheng Yang, Jianwei Hu, Qiang Ma</sub><br>
   Embodied-BenchForge 通过前向合成、反向验证、依赖追踪以及局部修复或回滚，将评测意图转化为具身基准测试产物；它构建离线和交互式赛道，并研究验证与技能复用如何提升基准质量。
