@@ -24,7 +24,7 @@
   </tr>
 </table>
 
-<p align="center"><b>53</b> research works &nbsp;·&nbsp; <b>4</b> industry updates &nbsp;·&nbsp; <b>2</b> benchmark &nbsp;·&nbsp; <b>5</b> surveys</p>
+<p align="center"><b>53</b> research works &nbsp;·&nbsp; <b>4</b> industry updates &nbsp;·&nbsp; <b>3</b> benchmark &nbsp;·&nbsp; <b>5</b> surveys</p>
 
 <a id="overview"></a>
 
@@ -335,6 +335,9 @@ _Constraints, oversight, auditing, rollback, and recovery for changing embodied 
 
 ## 🧪 Benchmarks & Datasets
 
+- **EmbodiedMemory-Bench: Benchmarking Embodied Memory for Long-Horizon Embodied Tasks** (2026-09-23) · *arXiv preprint* · `L0 Embodied` `benchmark` ![Open-source](https://img.shields.io/badge/Open--source-2ea44f?style=flat-square) ![Simulation](https://img.shields.io/badge/Simulation-8250df?style=flat-square). [Paper](https://arxiv.org/abs/2609.28236) · [Project](https://zju-omniai.github.io/EmbodiedMemoryBench/) · [Code](https://github.com/ZJU-OmniAI/Embodied-Omni/tree/main/embodied_memory) · [Data](https://huggingface.co/datasets/lzLiang/EmbodiedMemoryBench)<br>
+  <sub><b>Authors:</b> Lizhou Liang, Xinyu Zhong, Miao Pan, Xiaohe Zhou, Xuanyu Liu, Qinfeng Li, Peng Li, Jintao Chen, Xuhong Zhang, Wenqi Zhang</sub><br>
+  EmbodiedMemory-Bench tests whether memory built from earlier observations and interactions supports later embodied actions across 2,554 simulated episodes covering visual recall, dynamic state tracking, interaction outcomes, and experience generalization. It is an enabling evaluation resource, not evidence of recursive self-improvement. Benchmark code is Apache-2.0 licensed in its subdirectory; the public dataset is CC BY-NC 4.0, and policy-weight release is not verified.
 - **Embodied-BenchForge: A Closed-Loop Agentic Workflow for Embodied Benchmark Construction** (2026-09-11) · `L1 Adaptive` `benchmark`. [Paper](https://arxiv.org/abs/2609.13082)<br>
   <sub><b>Authors:</b> Baoyang Jiang, Fengchun Zhang, Leyuan Wang, Haotian Li, Yida Wang, Zhe Ji, Jinshan Lai, Xi Ren, Danyang Li, Zheng Yang, Jianwei Hu, Qiang Ma</sub><br>
   Embodied-BenchForge turns evaluation intents into embodied benchmark artifacts through forward synthesis, backward verification, dependency tracking, and localized repair or rollback. It constructs offline and interactive tracks and studies how verification and skill reuse improve benchmark quality.
