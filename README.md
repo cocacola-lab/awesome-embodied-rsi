@@ -24,7 +24,7 @@
   </tr>
 </table>
 
-<p align="center"><b>43</b> research works &nbsp;·&nbsp; <b>3</b> industry updates &nbsp;·&nbsp; <b>2</b> benchmark &nbsp;·&nbsp; <b>5</b> surveys</p>
+<p align="center"><b>43</b> research works &nbsp;·&nbsp; <b>3</b> industry updates &nbsp;·&nbsp; <b>3</b> benchmarks &nbsp;·&nbsp; <b>5</b> surveys</p>
 
 <a id="overview"></a>
 
@@ -303,6 +303,10 @@ _Constraints, oversight, auditing, rollback, and recovery for changing embodied 
 
 ## 🧪 Benchmarks & Datasets
 
+- **EmbodiedMemory-Bench: Benchmarking Embodied Memory for Long-Horizon Embodied Tasks** (2026-09-23) · *arXiv preprint* · `L0 Embodied` `benchmark` · `Simulation`. [Paper](https://arxiv.org/abs/2609.28236) · [Code](https://github.com/ZJU-OmniAI/Embodied-Omni/tree/main/embodied_memory) · [Data](https://huggingface.co/datasets/lzLiang/EmbodiedMemoryBench)<br>
+  <sub><b>Authors:</b> Lizhou Liang, Xinyu Zhong, Miao Pan, Xiaohe Zhou, Xuanyu Liu, Qinfeng Li, Peng Li, Jintao Chen, Xuhong Zhang, and Wenqi Zhang</sub><br>
+  Tests whether memory built from earlier observations and interactions supports later embodied actions across 2,554 episodes covering visual recall, dynamic state tracking, interaction outcomes, and experience generalization; listed as an enabling evaluation resource, without a recursive self-improvement claim.<br>
+  <sub><b>Openness:</b> Code: open-source (Apache-2.0 in the benchmark subdirectory); data: public (CC BY-NC 4.0); policy weights: release not verified.</sub>
 - **Embodied-BenchForge: A Closed-Loop Agentic Workflow for Embodied Benchmark Construction** (2026-09-11) · `L1 Adaptive` `benchmark`. [Paper](https://arxiv.org/abs/2609.13082)<br>
   <sub><b>Authors:</b> Baoyang Jiang, Fengchun Zhang, Leyuan Wang, Haotian Li, Yida Wang, Zhe Ji, Jinshan Lai, Xi Ren, Danyang Li, Zheng Yang, Jianwei Hu, Qiang Ma</sub><br>
   Embodied-BenchForge turns evaluation intents into embodied benchmark artifacts through forward synthesis, backward verification, dependency tracking, and localized repair or rollback. It constructs offline and interactive tracks and studies how verification and skill reuse improve benchmark quality.
