@@ -24,6 +24,8 @@ Reflection, replanning, adaptation, continual learning, and agentic behavior are
 
 Use the level directly supported by reported evidence.
 
+Digital-agent methods that inform Embodied RSI but have no physical or simulated-embodiment evaluation use `N/A Digital Reference` and a `Digital-only` environment label; they are outside the L0–L4 embodied maturity scale.
+
 ## Academic sections
 
 - **Foundations & Definitions:** theory, definitions and perspectives.
