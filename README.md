@@ -24,7 +24,7 @@
   </tr>
 </table>
 
-<p align="center"><b>61</b> research works &nbsp;·&nbsp; <b>7</b> industry updates &nbsp;·&nbsp; <b>4</b> benchmark &nbsp;·&nbsp; <b>7</b> surveys</p>
+<p align="center"><b>61</b> research works &nbsp;·&nbsp; <b>7</b> industry updates &nbsp;·&nbsp; <b>5</b> benchmark &nbsp;·&nbsp; <b>7</b> surveys</p>
 
 <a id="overview"></a>
 
@@ -359,6 +359,9 @@ _Constraints, oversight, auditing, rollback, and recovery for changing embodied 
 
 ## 🧪 Benchmarks & Datasets
 
+- **RoboQuest: Generalist Physical Agents that Search, Inspect and Test** (2026-10-07) · *arXiv preprint* · `L1 Adaptive` `benchmark` ![Open-source](https://img.shields.io/badge/Open--source-2ea44f?style=flat-square) ![Simulation](https://img.shields.io/badge/Simulation-8250df?style=flat-square). [Paper](https://arxiv.org/abs/2610.10388) · [Project](https://declare-lab.github.io/RoboQuest/) · [Code](https://github.com/declare-lab/RoboQuest) · [Data](https://huggingface.co/datasets/declare-lab/RoboQuest)<br>
+  <sub><b>Authors:</b> Liu Renhang, Navonil Majumder, Tej Deep Pala, Soujanya Poria</sub><br>
+  RoboQuest evaluates within-episode adaptation as mobile manipulators search for hidden objects, inspect properties, and test unfamiliar mechanisms in ten RoboCasa365 kitchen tasks simulated with MuJoCo. It releases 5,000 verified demonstrations. The agents use evidence gathered during an episode, but no improvement persists across episodes; the paper reports that trial-and-error learning remains difficult for most evaluated models. This is an L1 enabling benchmark, not evidence of embodied RSI.
 - **EmbodiedMemory-Bench: Benchmarking Embodied Memory for Long-Horizon Embodied Tasks** (2026-09-23) · *arXiv preprint* · `L0 Embodied` `benchmark` ![Open-source](https://img.shields.io/badge/Open--source-2ea44f?style=flat-square) ![Simulation](https://img.shields.io/badge/Simulation-8250df?style=flat-square). [Paper](https://arxiv.org/abs/2609.28236) · [Project](https://zju-omniai.github.io/EmbodiedMemoryBench/) · [Code](https://github.com/ZJU-OmniAI/Embodied-Omni/tree/main/embodied_memory) · [Data](https://huggingface.co/datasets/lzLiang/EmbodiedMemoryBench)<br>
   <sub><b>Authors:</b> Lizhou Liang, Xinyu Zhong, Miao Pan, Xiaohe Zhou, Xuanyu Liu, Qinfeng Li, Peng Li, Jintao Chen, Xuhong Zhang, Wenqi Zhang</sub><br>
   EmbodiedMemory-Bench tests whether memory built from earlier observations and interactions supports later embodied actions across 2,554 simulated episodes covering visual recall, dynamic state tracking, interaction outcomes, and experience generalization. It is an enabling evaluation resource, not evidence of recursive self-improvement. Benchmark code is Apache-2.0 licensed in its subdirectory; the public dataset is CC BY-NC 4.0, and policy-weight release is not verified.
