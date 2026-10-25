@@ -24,7 +24,7 @@
   </tr>
 </table>
 
-<p align="center"><b>61</b> 项研究 &nbsp;·&nbsp; <b>7</b> 条产业动态 &nbsp;·&nbsp; <b>4</b> 个基准 &nbsp;·&nbsp; <b>7</b> 篇综述</p>
+<p align="center"><b>61</b> 项研究 &nbsp;·&nbsp; <b>7</b> 条产业动态 &nbsp;·&nbsp; <b>5</b> 个基准 &nbsp;·&nbsp; <b>7</b> 篇综述</p>
 
 <a id="overview"></a>
 
@@ -359,6 +359,9 @@ _收录面向可变具身系统的约束、监督、审计、回滚与恢复；�
 
 ## 🧪 基准与数据集
 
+- **RoboQuest: Generalist Physical Agents that Search, Inspect and Test** (2026-10-07) · *arXiv preprint* · `L1 Adaptive` `benchmark` ![Open-source](https://img.shields.io/badge/Open--source-2ea44f?style=flat-square) ![Simulation](https://img.shields.io/badge/Simulation-8250df?style=flat-square). [Paper](https://arxiv.org/abs/2610.10388) · [Project](https://declare-lab.github.io/RoboQuest/) · [Code](https://github.com/declare-lab/RoboQuest) · [Data](https://huggingface.co/datasets/declare-lab/RoboQuest)<br>
+  <sub><b>作者:</b> Liu Renhang, Navonil Majumder, Tej Deep Pala, Soujanya Poria</sub><br>
+  RoboQuest 在基于 MuJoCo 的 RoboCasa365 厨房仿真中，以十项移动操作任务评测单次任务内的适应：机器人需要寻找隐藏物体、检查属性并测试陌生机制。项目开放 5,000 条已验证示范。智能体利用本轮探索获得的证据调整行动，但改进不会跨回合保留；论文报告多数受测模型仍难以通过试错学习。因此它是 L1 基础评测资源，而非具身 RSI 的证据。
 - **EmbodiedMemory-Bench: Benchmarking Embodied Memory for Long-Horizon Embodied Tasks** (2026-09-23) · *arXiv preprint* · `L0 Embodied` `benchmark` ![Open-source](https://img.shields.io/badge/Open--source-2ea44f?style=flat-square) ![Simulation](https://img.shields.io/badge/Simulation-8250df?style=flat-square). [Paper](https://arxiv.org/abs/2609.28236) · [Project](https://zju-omniai.github.io/EmbodiedMemoryBench/) · [Code](https://github.com/ZJU-OmniAI/Embodied-Omni/tree/main/embodied_memory) · [Data](https://huggingface.co/datasets/lzLiang/EmbodiedMemoryBench)<br>
   <sub><b>作者:</b> Lizhou Liang, Xinyu Zhong, Miao Pan, Xiaohe Zhou, Xuanyu Liu, Qinfeng Li, Peng Li, Jintao Chen, Xuhong Zhang, Wenqi Zhang</sub><br>
   EmbodiedMemory-Bench 在 2,554 个仿真回合中评测早期观测与交互形成的记忆能否支持后续具身行动，覆盖视觉细节记忆、动态状态追踪、交互结果记忆与经验泛化。它是基础评测资源，并不证明递归式自我改进。基准子目录代码采用 Apache-2.0 许可证；公开数据采用 CC BY-NC 4.0，策略权重是否发布尚未核实。
