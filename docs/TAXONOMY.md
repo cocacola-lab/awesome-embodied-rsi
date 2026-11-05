@@ -16,11 +16,15 @@ Reflection, replanning, adaptation, continual learning, and agentic behavior are
 
 ## RSI levels
 
-- **L0 — Embodied:** perception and action without persistent self-improvement.
-- **L1 — Adaptive:** within-task reflection, replanning, correction, or temporary adaptation.
-- **L2 — Self-Improving:** persistent changes to a model, policy, memory, skill, harness, or embodiment using the agent's own experience.
-- **L3 — Recursive:** the persistent change improves later goal generation, data collection, evaluation, learning, or system modification.
-- **L4 — Open-Ended:** the system autonomously accumulates expanding capabilities over long horizons and in open-ended spaces.
+| Level | Stage | What changes? | Role in this collection |
+|:---:|---|---|---|
+| `L0` | **Embodied** | Perception and action, without persistent improvement | Background |
+| `L1` | **Adaptive** | In-task adaptation, reflection, or replanning; nothing persists across tasks.<br>**Inner loop remains fixed.** | Related work |
+| `L2` | **Self-Improving (SI)** | The agent's own experience produces persistent capability changes; the improvement procedure remains fixed.<br>**Learn in the inner loop; freeze the outer loop.** | **Core SI** |
+| `L3` | **Recursive (RSI)** | The improvement procedure also changes and demonstrably strengthens later improvement cycles.<br>**Learn in both the inner and outer loops.** | **Core RSI** |
+| `L4` | **Open-Ended & Lifelong** | Autonomous goals and capability accumulation across long horizons and open-ended settings. | Frontier |
+
+**Inner loop** means using experience to update capabilities such as models, policies, memory, skills, or harnesses. **Outer loop** means the procedure that decides how to acquire experience, evaluate results, and make those updates. Here, *fixed* or *freeze* means no persistent update to that loop; it does not rule out temporary reflection or correction within a task.
 
 Use the level directly supported by reported evidence.
 
