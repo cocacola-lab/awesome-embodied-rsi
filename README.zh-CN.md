@@ -24,7 +24,7 @@
   </tr>
 </table>
 
-<p align="center"><b>61</b> 项研究 &nbsp;·&nbsp; <b>7</b> 条产业动态 &nbsp;·&nbsp; <b>5</b> 个基准 &nbsp;·&nbsp; <b>7</b> 篇综述</p>
+<p align="center"><b>65</b> 项研究 &nbsp;·&nbsp; <b>7</b> 条产业动态 &nbsp;·&nbsp; <b>5</b> 个基准 &nbsp;·&nbsp; <b>8</b> 篇综述</p>
 
 <a id="overview"></a>
 
@@ -53,21 +53,21 @@
 ## 🔥 每周精选
 
 <!-- WEEKLY_HIGHLIGHTS -->
+- **TinyAstral: Transferring Self-Evolving Harnesses to Tiny Generalist Manipulation Agents** (2026-10-30) · *arXiv preprint* · `L2 Self-Improving` `paper` ![Open-source](https://img.shields.io/badge/Open--source-2ea44f?style=flat-square) ![Simulation](https://img.shields.io/badge/Simulation-8250df?style=flat-square) ![Real-machine](https://img.shields.io/badge/Real--machine-0969da?style=flat-square). [Paper](https://arxiv.org/abs/2610.41216) · [Project](https://garfield-kh.github.io/TinyAstral/) · [Code](https://github.com/Garfield-kh/TinyAstral) · [Weights](https://huggingface.co/kehong/TinyAstral-weights) · [Data](https://huggingface.co/datasets/kehong/TinyAstral-SFT)<br>
+  <sub><b>作者:</b> Kehong Gong, Xiaoxu Zheng, Guanli Hou, Seunghun Lee, Mengqi Guo, Runjia Tan, Zhengyu Wen, Qi Wang, Xiaoyu He, Mingyuan Zhang, Michael Bi Mi</sub><br>
+  TinyAstral 先通过配对测试筛选对冻结教师模型的机器人 Harness 修订，再把轨迹和失败恢复行为蒸馏到使用同一 Harness 的 4B 学生模型。作者报告 RoboTwin 中教师模型成功率从 33.4% 升至 63.6%、学生模型达到 62.8%，并展示 SO-ARM101 闭环运行；真机演示本身并不等于真机自主改进的证据。
+- **Recursive Self-Improvement in Physical AI: Mechanisms, Evidence, and Evaluation** (2026-10-28) · `L0 Embodied` `survey`. [Paper](https://arxiv.org/abs/2610.38266) · [Repository](https://github.com/nkd-lkz/physical-ai-rsi-survey)<br>
+  <sub><b>作者:</b> Xiaofeng Han, Kaize Luo, Zenghuang Fu, Zichong Zhu, Zhe Feng, Changwei Wang, Rongtao Xu, Weiliang Meng, Xiaopeng Zhang</sub><br>
+  这篇综述区分学习器的持久增益与改进流程本身的变化，比较策略、记忆、技能和可执行 Harness，并提出检验改进器修订是否增强后续迭代的对照方法。其 L0-L3 证据量表是论文自定义框架，与本仓库的 L0-L4 标签并不相同；它是综述，并非已实现的 RSI 系统。
+- **VISTA: Active Exploration for Self-Improvement in Embodied Agents** (2026-10-26) · *arXiv preprint* · `L2 Self-Improving` `paper` ![Open-source](https://img.shields.io/badge/Open--source-2ea44f?style=flat-square) ![Simulation](https://img.shields.io/badge/Simulation-8250df?style=flat-square). [Paper](https://arxiv.org/abs/2610.35051) · [Project](https://agenticei.github.io/VISTA-page/) · [Code](https://github.com/AgenticEI/VISTA)<br>
+  <sub><b>作者:</b> Zhang Zhang, Shengjun Zhang, Simin Huang, Min Chen, Chong Xia, Xin Fei, Yueqi Duan</sub><br>
+  VISTA 让元智能体主动在仿真中探查失败、修改可执行机器人 Harness，并将评测版本及证据保存在 Harness 图中。论文报告 LIBERO-Pro、RoboCasa 和 RoboTwin 上的提升；Apache-2.0 代码目前提供 LIBERO-Pro 实现，其他环境的集成尚待发布。
+- **RoboDoctor: Training-Free Recursive Self-Improvement for Robot Policies** (2026-10-26) · *arXiv preprint* · `L1 Adaptive` `paper` ![Open-source](https://img.shields.io/badge/Open--source-2ea44f?style=flat-square) ![Simulation](https://img.shields.io/badge/Simulation-8250df?style=flat-square). [Paper](https://arxiv.org/abs/2610.35604) · [Project](https://robodoctor-rsi.github.io/) · [Code](https://github.com/THUSI-Lab/RoboDoctor)<br>
+  <sub><b>作者:</b> Heyang Yu, Haomin Li, Sihang Li, Jixin Yan, Shiyun Peng, Wanqi Zhong, Tianyu Xin, Yuan Yao, Xiaoyu Tian, Yiming Li</sub><br>
+  RoboDoctor 在模型权重固定的条件下，通过诊断、有限干预和操作修订调整机器人策略的执行，并记录经验供后续复用。作者报告了 54 项 RoboDojo-Sim 任务的结果，但也明确指出尚未用对照实验单独证实跨回合经验收益，因此暂保守标为 L1。
 - **SenseNova-RoboRSI: Recursive Self-Improvement for Embodied Agents** (2026-10-22) · *Open-source system release* · `L2 Self-Improving` `system` ![Open-source](https://img.shields.io/badge/Open--source-2ea44f?style=flat-square) ![Real-machine](https://img.shields.io/badge/Real--machine-0969da?style=flat-square) ![Simulation](https://img.shields.io/badge/Simulation-8250df?style=flat-square). [Code](https://github.com/OpenSenseNova/SenseNova-RoboRSI) · [Weights](https://huggingface.co/sensenova/sensenova-roborsi-27b-preview)<br>
   <sub><b>作者:</b> Hanming Deng, Zhongang Cai, Haiwen Diao, Zhi Hou, Zhonghua Wu, Qingyi Tao, SenseNova RoboRSI Team</sub><br>
   SenseNova-RoboRSI 公开 Apache-2.0 运行框架，利用执行轨迹和反馈测试 Harness 修订，并提供基于已验证交互经验训练的预览模型权重。10 月 22 日更新提供 RoboCasa365 Target50 代码与指南，并称模型已用于仿真和真机；完整技术报告尚待发布。现有基准对比由项目方报告，各改进组件的独立贡献仍待进一步核验。
-- **Toward Recursive Self-Improvement in Physical AI** (2026-10-21) · `L0 Embodied` `survey`. [Paper](https://arxiv.org/abs/2610.29677) · [Project](https://physical2rsi.github.io/)<br>
-  <sub><b>作者:</b> Meng Luo, Zechen Bai, Shanqing Xu, Yanlin Li, Kaixin Li, Mengchen Qian, Weifeng Lu, Ran Zhang, Yingtian Zou, Ziyang Luo, Wei Chen, Hongzhan Lin</sub><br>
-  这篇综述区分机器人行为本身的改进与产生后续改进的流程之改进，梳理物理经验反馈、跨任务与硬件迁移，以及安全和成本约束。作者指出，现有实体研究尚未单独证实由递归机制本身带来的增益。作为综述，它标为 L0，而非已实现的 RSI 系统。
-- **Compile Once, Run Cheap: Frozen, Portable Skills for Embodied Agents, and What Recursive Self-Improvement Adds** (2026-10-18) · *arXiv preprint* · `L2 Self-Improving` `paper` ![Open-source](https://img.shields.io/badge/Open--source-2ea44f?style=flat-square) ![Simulation](https://img.shields.io/badge/Simulation-8250df?style=flat-square). [Paper](https://arxiv.org/abs/2610.25114) · [Code](https://github.com/Orillusion/embodied-skill-rsi)<br>
-  <sub><b>作者:</b> Jingwen Bai, Guochao Bai, Canbo Zhang, Shuangqi Li, Minchao Hu, Weichun Huang, Shuang Liu</sub><br>
-  Skill-RSI 用离线编码智能体在 RoboTwin 2.0 仿真中编写、测试和修复机器人操作技能，再冻结技能进行留出布局评测和低成本复用。七项任务中有四项产出七个冻结技能；在八组配对实验中，继承旧版本的修复优于从头重写。作者的对照表明优势主要来自版本继承，开发反馈带来的额外增益证据有限，因此归为持久技能改进，而非已证实的元改进。仓库公开代码、实验账本和技能；实验仅在仿真中进行。
-- **Learning to Compose: Recursive Self-Improvement of Shared Executable Stacks for Zero-Shot Long-Horizon Robot Manipulation** (2026-10-17) · *arXiv preprint* · `L2 Self-Improving` `paper` ![Open-source](https://img.shields.io/badge/Open--source-2ea44f?style=flat-square) ![Real-machine](https://img.shields.io/badge/Real--machine-0969da?style=flat-square) ![Simulation](https://img.shields.io/badge/Simulation-8250df?style=flat-square). [Paper](https://arxiv.org/abs/2610.24464) · [Project](https://cocacola-lab.github.io/Recursia-website/) · [Code](https://github.com/cocacola-lab/Recursia)<br>
-  <sub><b>作者:</b> Yangzhi Chen, Feiran Liu, Zishuo Wang, Zijian Jin, Xin Zhu, Lecheng Ruan, Wenjuan Han</sub><br>
-  Recursia 根据执行轨迹修复机器人工具、技能、契约、交接和验证器组成的共享可执行栈，将通过验证的版本冻结并复用于新任务组合。论文在 LIBERO-Pro Long 仿真和 Franka FR3 真机上评测，分别报告相对 ASPIRE 和技能文档基线的提升。Apache-2.0 仓库目前已提供真机实现，仿真代码尚待发布。
-- **InstAgent: A Recursively Self-Improving Agent Operating System for Heterogeneous Robot Collaboration** (2026-10-16) · *arXiv preprint* · `L2 Self-Improving` `paper` ![Closed-source](https://img.shields.io/badge/Closed--source-d73a49?style=flat-square) ![Real-machine](https://img.shields.io/badge/Real--machine-0969da?style=flat-square). [Paper](https://arxiv.org/abs/2610.23098)<br>
-  <sub><b>作者:</b> Haoyang Luo, Junhao Qin, Jingyan Cao, Yi Huang, Guangjie Yang, Xiaoyu Chen, Haotao Lu, Tianxiang Gui, Ye Shi, Jingya Wang</sub><br>
-  InstAgent 用行为树表示异构机器人协作，根据执行反馈修订协作程序，并保存成功版本以供后续任务复用。作者在 20 项真实多机器人任务上报告成功率、首次完成率与效率提升。论文展示了持久修订，尚未证明更高层的改进机制自我增强。
 
 <a id="research"></a>
 
@@ -254,6 +254,18 @@ _收录技能或行为的获取、精炼、组合与复用；依据智能体可�
 
 _收录可变的中间件、工具、上下文、编排与运行时基础设施；当改进对象是智能体外部系统时归入此类。_
 
+- **TinyAstral: Transferring Self-Evolving Harnesses to Tiny Generalist Manipulation Agents** (2026-10-30) · *arXiv preprint* · `L2 Self-Improving` `paper` ![Open-source](https://img.shields.io/badge/Open--source-2ea44f?style=flat-square) ![Simulation](https://img.shields.io/badge/Simulation-8250df?style=flat-square) ![Real-machine](https://img.shields.io/badge/Real--machine-0969da?style=flat-square). [Paper](https://arxiv.org/abs/2610.41216) · [Project](https://garfield-kh.github.io/TinyAstral/) · [Code](https://github.com/Garfield-kh/TinyAstral) · [Weights](https://huggingface.co/kehong/TinyAstral-weights) · [Data](https://huggingface.co/datasets/kehong/TinyAstral-SFT)<br>
+  <sub><b>作者:</b> Kehong Gong, Xiaoxu Zheng, Guanli Hou, Seunghun Lee, Mengqi Guo, Runjia Tan, Zhengyu Wen, Qi Wang, Xiaoyu He, Mingyuan Zhang, Michael Bi Mi</sub><br>
+  TinyAstral 先通过配对测试筛选对冻结教师模型的机器人 Harness 修订，再把轨迹和失败恢复行为蒸馏到使用同一 Harness 的 4B 学生模型。作者报告 RoboTwin 中教师模型成功率从 33.4% 升至 63.6%、学生模型达到 62.8%，并展示 SO-ARM101 闭环运行；真机演示本身并不等于真机自主改进的证据。
+- **VISTA: Active Exploration for Self-Improvement in Embodied Agents** (2026-10-26) · *arXiv preprint* · `L2 Self-Improving` `paper` ![Open-source](https://img.shields.io/badge/Open--source-2ea44f?style=flat-square) ![Simulation](https://img.shields.io/badge/Simulation-8250df?style=flat-square). [Paper](https://arxiv.org/abs/2610.35051) · [Project](https://agenticei.github.io/VISTA-page/) · [Code](https://github.com/AgenticEI/VISTA)<br>
+  <sub><b>作者:</b> Zhang Zhang, Shengjun Zhang, Simin Huang, Min Chen, Chong Xia, Xin Fei, Yueqi Duan</sub><br>
+  VISTA 让元智能体主动在仿真中探查失败、修改可执行机器人 Harness，并将评测版本及证据保存在 Harness 图中。论文报告 LIBERO-Pro、RoboCasa 和 RoboTwin 上的提升；Apache-2.0 代码目前提供 LIBERO-Pro 实现，其他环境的集成尚待发布。
+- **RoboDoctor: Training-Free Recursive Self-Improvement for Robot Policies** (2026-10-26) · *arXiv preprint* · `L1 Adaptive` `paper` ![Open-source](https://img.shields.io/badge/Open--source-2ea44f?style=flat-square) ![Simulation](https://img.shields.io/badge/Simulation-8250df?style=flat-square). [Paper](https://arxiv.org/abs/2610.35604) · [Project](https://robodoctor-rsi.github.io/) · [Code](https://github.com/THUSI-Lab/RoboDoctor)<br>
+  <sub><b>作者:</b> Heyang Yu, Haomin Li, Sihang Li, Jixin Yan, Shiyun Peng, Wanqi Zhong, Tianyu Xin, Yuan Yao, Xiaoyu Tian, Yiming Li</sub><br>
+  RoboDoctor 在模型权重固定的条件下，通过诊断、有限干预和操作修订调整机器人策略的执行，并记录经验供后续复用。作者报告了 54 项 RoboDojo-Sim 任务的结果，但也明确指出尚未用对照实验单独证实跨回合经验收益，因此暂保守标为 L1。
+- **The Trinity: Capability-Driven Recursive Self-Improvement for Multimodal Agents** (2026-10-26) · *arXiv preprint* · `L2 Self-Improving` `paper` ![Closed-source](https://img.shields.io/badge/Closed--source-d73a49?style=flat-square) ![Simulation](https://img.shields.io/badge/Simulation-8250df?style=flat-square) ![Real-machine](https://img.shields.io/badge/Real--machine-0969da?style=flat-square). [Paper](https://arxiv.org/abs/2610.36077)<br>
+  <sub><b>作者:</b> Weidong Tang, Ruiheng Wang, Jingxuan Zhang, Hexin Wang, Haoyuan Chen, Zhengfeiyang Zhang, Yixing Ma, Zichen Jiang, Ziyu Guo, Haodong Li, Zhengbo Jiao, Zhiqing Cui, Xinxiang Yin, Shuo Liang, Zhenglin Wan, Hongzhan Lin, Wangbo Zhao, Kaipeng Zhang, Pengfei Zhou, Odin Zhang, Yang You</sub><br>
+  The Trinity 将可验证的环境生成与按能力组织的持久 Harness 修订结合，并在异构多模态任务上测试迁移，其中包含两项真实具身任务。主要证据覆盖大量非机器人基准，因此具身部分的证据范围小于总体提升；论文未单独证实改进器自身变强。
 - **SenseNova-RoboRSI: Recursive Self-Improvement for Embodied Agents** (2026-10-22) · *Open-source system release* · `L2 Self-Improving` `system` ![Open-source](https://img.shields.io/badge/Open--source-2ea44f?style=flat-square) ![Real-machine](https://img.shields.io/badge/Real--machine-0969da?style=flat-square) ![Simulation](https://img.shields.io/badge/Simulation-8250df?style=flat-square). [Code](https://github.com/OpenSenseNova/SenseNova-RoboRSI) · [Weights](https://huggingface.co/sensenova/sensenova-roborsi-27b-preview)<br>
   <sub><b>作者:</b> Hanming Deng, Zhongang Cai, Haiwen Diao, Zhi Hou, Zhonghua Wu, Qingyi Tao, SenseNova RoboRSI Team</sub><br>
   SenseNova-RoboRSI 公开 Apache-2.0 运行框架，利用执行轨迹和反馈测试 Harness 修订，并提供基于已验证交互经验训练的预览模型权重。10 月 22 日更新提供 RoboCasa365 Target50 代码与指南，并称模型已用于仿真和真机；完整技术报告尚待发布。现有基准对比由项目方报告，各改进组件的独立贡献仍待进一步核验。
@@ -394,6 +406,9 @@ _收录面向可变具身系统的约束、监督、审计、回滚与恢复；�
 
 ## 📚 综述
 
+- **Recursive Self-Improvement in Physical AI: Mechanisms, Evidence, and Evaluation** (2026-10-28) · `L0 Embodied` `survey`. [Paper](https://arxiv.org/abs/2610.38266) · [Repository](https://github.com/nkd-lkz/physical-ai-rsi-survey)<br>
+  <sub><b>作者:</b> Xiaofeng Han, Kaize Luo, Zenghuang Fu, Zichong Zhu, Zhe Feng, Changwei Wang, Rongtao Xu, Weiliang Meng, Xiaopeng Zhang</sub><br>
+  这篇综述区分学习器的持久增益与改进流程本身的变化，比较策略、记忆、技能和可执行 Harness，并提出检验改进器修订是否增强后续迭代的对照方法。其 L0-L3 证据量表是论文自定义框架，与本仓库的 L0-L4 标签并不相同；它是综述，并非已实现的 RSI 系统。
 - **Toward Recursive Self-Improvement in Physical AI** (2026-10-21) · `L0 Embodied` `survey`. [Paper](https://arxiv.org/abs/2610.29677) · [Project](https://physical2rsi.github.io/)<br>
   <sub><b>作者:</b> Meng Luo, Zechen Bai, Shanqing Xu, Yanlin Li, Kaixin Li, Mengchen Qian, Weifeng Lu, Ran Zhang, Yingtian Zou, Ziyang Luo, Wei Chen, Hongzhan Lin</sub><br>
   这篇综述区分机器人行为本身的改进与产生后续改进的流程之改进，梳理物理经验反馈、跨任务与硬件迁移，以及安全和成本约束。作者指出，现有实体研究尚未单独证实由递归机制本身带来的增益。作为综述，它标为 L0，而非已实现的 RSI 系统。
